@@ -61,7 +61,7 @@ export default function AdminPortal() {
   };
 
   // Update lead status
-  const updateLeadStatus = async (leadId: string, status: string, notes?: string) => {
+  const updateLeadStatus = async (leadId: string, status: 'PENDING' | 'PAID' | 'CANCELLED' | 'REFUNDED', notes?: string) => {
     try {
       const response = await fetch('/api/leads', {
         method: 'PUT',
@@ -93,7 +93,7 @@ export default function AdminPortal() {
     const matchesSearch = searchTerm === '' || 
       lead.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       lead.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      lead.currentEmployer.toLowerCase().includes(searchTerm.toLowerCase());
+      (lead.currentEmployer && lead.currentEmployer.toLowerCase().includes(searchTerm.toLowerCase()));
     
     return matchesFilter && matchesSearch;
   });
@@ -378,7 +378,7 @@ export default function AdminPortal() {
                         <div><span className="text-gray-400">Email:</span> <span className="text-white">{selectedLead.email}</span></div>
                         <div>
                           <span className="text-gray-400">LinkedIn:</span> 
-                          <a href={selectedLead.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline ml-1">
+                          <a href={selectedLead.linkedinUrl || '#'} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline ml-1">
                             View Profile
                           </a>
                         </div>
@@ -454,7 +454,7 @@ export default function AdminPortal() {
                         {['PENDING', 'PAID', 'CANCELLED', 'REFUNDED'].map((status) => (
                           <button
                             key={status}
-                            onClick={() => updateLeadStatus(selectedLead.id, status)}
+                            onClick={() => updateLeadStatus(selectedLead.id, status as 'PENDING' | 'PAID' | 'CANCELLED' | 'REFUNDED')}
                             disabled={selectedLead.status === status}
                             className={`px-3 py-1 rounded text-xs font-medium transition ${
                               selectedLead.status === status
@@ -477,7 +477,7 @@ export default function AdminPortal() {
                           const updatedLead = { ...selectedLead, notes: e.target.value };
                           setSelectedLead(updatedLead);
                         }}
-                        onBlur={() => updateLeadStatus(selectedLead.id, selectedLead.status, selectedLead.notes)}
+                        onBlur={() => updateLeadStatus(selectedLead.id, selectedLead.status, selectedLead.notes || undefined)}
                         placeholder="Add notes about this lead..."
                         className="w-full px-3 py-2 rounded-lg bg-white/5 text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-200/50"
                         rows={3}
