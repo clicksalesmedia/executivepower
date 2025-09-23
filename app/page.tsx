@@ -79,18 +79,20 @@ export default function Home() {
 
         {/* Animated Geometric Lines */}
         <motion.div 
-          className="absolute inset-0 opacity-20          initial={{ opacity: 0 }}
+          className="absolute inset-0 opacity-20"
+          initial={{ opacity: 0 }}
           animate={{ opacity: 0.2 }}
           transition={{ duration: 2 }}
         >
           {/* Diagonal animated lines */}
           <motion.div
-            className="absolute top-0 left-0 w-full h-full            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 60, repeat: Infinity, ease: linear" }}
+            className="absolute top-0 left-0 w-full h-full"
+            animate={{ rotate: [0, 360] }}
+            transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
           >
             <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-              <line x1="0" y1="0" x2="100%" y2="100%" stroke="rgba(212, 175, 55, 0.1)" strokeWidth="1" strokeDasharray=5,10"/>
-              <line x1="100%" y1="0" x2="0" y2="100%" stroke="rgba(212, 175, 55, 0.1)" strokeWidth="1" strokeDasharray=5,10"/>
+              <line x1="0" y1="0" x2="100%" y2="100%" stroke="rgba(212, 175, 55, 0.1)" strokeWidth="1" strokeDasharray="5,10"/>
+              <line x1="100%" y1="0" x2="0" y2="100%" stroke="rgba(212, 175, 55, 0.1)" strokeWidth="1" strokeDasharray="5,10"/>
             </svg>
           </motion.div>
 
