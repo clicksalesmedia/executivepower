@@ -1,9 +1,9 @@
 "use client";
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function SuccessPage() {
+function SuccessPageContent() {
   const [isLoading, setIsLoading] = useState(true);
   const searchParams = useSearchParams();
   const paymentIntent = searchParams.get('payment_intent');
@@ -253,6 +253,21 @@ export default function SuccessPage() {
         </div>
       </div>
     </>
+  );
+}
+
+export default function SuccessPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#1B1C1D] flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-200 mx-auto mb-4"></div>
+          <p className="text-white">Loading success page...</p>
+        </div>
+      </div>
+    }>
+      <SuccessPageContent />
+    </Suspense>
   );
 }
 

@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import {
   Elements,
@@ -123,7 +123,7 @@ function CheckoutForm({ packageInfo }: { packageInfo: PackageInfo }) {
   );
 }
 
-export default function DynamicCheckoutPage() {
+function DynamicCheckoutPageContent() {
   const params = useParams();
   const searchParams = useSearchParams();
   const [clientSecret, setClientSecret] = useState('');
@@ -462,6 +462,21 @@ export default function DynamicCheckoutPage() {
         </motion.div>
       </div>
     </>
+  );
+}
+
+export default function DynamicCheckoutPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#1B1C1D] flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-200 mx-auto mb-4"></div>
+          <p className="text-white">Loading checkout...</p>
+        </div>
+      </div>
+    }>
+      <DynamicCheckoutPageContent />
+    </Suspense>
   );
 }
 
