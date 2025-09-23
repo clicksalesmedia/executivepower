@@ -3,11 +3,20 @@ import Stripe from 'stripe';
 import { prisma } from "@/lib/prisma";
 import { LeadStatus } from '@prisma/client';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+// Check if Stripe keys are available
+if (!process.env.STRIPE_SECRET_KEY) {
+  throw new Error('STRIPE_SECRET_KEY environment variable is not set');
+}
+
+if (!process.env.STRIPE_WEBHOOK_SECRET) {
+  throw new Error('STRIPE_WEBHOOK_SECRET environment variable is not set');
+}
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: '2025-08-27.basil',
 });
 
-const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET!;
+const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
