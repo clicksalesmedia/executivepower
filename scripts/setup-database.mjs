@@ -18,13 +18,13 @@ try {
   console.log('🗄️ Running database migrations...');
   try {
     execSync('npx prisma migrate dev --name init', { stdio: 'inherit' });
-  } catch (error) {
+  } catch {
     console.log('⚠️  Migration failed, trying to push schema...');
     execSync('npx prisma db push', { stdio: 'inherit' });
   }
 
   console.log('👤 Creating admin user...');
-  execSync('node scripts/seed-admin.js', { stdio: 'inherit' });
+  execSync('node scripts/seed-admin.mjs', { stdio: 'inherit' });
 
   console.log('');
   console.log('🎉 Setup completed successfully!');

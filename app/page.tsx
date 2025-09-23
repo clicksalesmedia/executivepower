@@ -15,7 +15,195 @@ export default function Home() {
       <style
         dangerouslySetInnerHTML={{
           __html: `
-        :root {\n            --gold-primary: #D4AF37;\n            --gold-light: #F4E4C1;\n            --gold-dark: #B8941F;\n        }\n        \n        body {\n            font-family: 'Inter', sans-serif;\n            background-color: #1B1C1D;\n            overflow-x: hidden;\n        }\n        \n        .font-luxury {\n            font-family: 'Playfair Display', serif;\n        }\n        \n        .gold-gradient {\n            background: linear-gradient(135deg, #D4AF37, #F4E4C1, #D4AF37);\n            -webkit-background-clip: text;\n            -webkit-text-fill-color: transparent;\n            background-clip: text;\n        }\n        \n        .gold-gradient-bg {\n            background: linear-gradient(135deg, #D4AF37, #F4E4C1, #D4AF37);\n        }\n        \n        .luxury-border {\n            background: linear-gradient(135deg, #D4AF37, #F4E4C1, #D4AF37);\n            padding: 1px;\n        }\n        \n        .glass-effect {\n            background: rgba(255, 255, 255, 0.02);\n            backdrop-filter: blur(10px);\n            border: 1px solid rgba(212, 175, 55, 0.2);\n        }\n        \n        .floating {\n            animation: float 6s ease-in-out infinite;\n        }\n        \n        @keyframes float {\n            0%, 100% { transform: translateY(0px); }\n            50% { transform: translateY(-20px); }\n        }\n        \n        .shine-effect {\n            position: relative;\n            overflow: hidden;\n        }\n        \n        .shine-effect::before {\n            content: '';\n            position: absolute;\n            top: -50%;\n            left: -50%;\n            width: 200%;\n            height: 200%;\n            background: linear-gradient(45deg, transparent, rgba(212, 175, 55, 0.1), transparent);\n            transform: rotate(45deg);\n            animation: shine 3s infinite;\n        }\n        \n        @keyframes shine {\n            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }\n            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }\n        }\n        \n        .fade-in-up {\n            animation: fadeInUp 1s ease-out;\n        }\n        \n        @keyframes fadeInUp {\n            from {\n                opacity: 0;\n                transform: translateY(30px);\n            }\n            to {\n                opacity: 1;\n                transform: translateY(0);\n            }\n        }\n        \n        .parallax-bg {\n            background-image: \n                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),\n                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),\n                radial-gradient(circle at 40% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);\n        }\n        \n        .text-shadow-gold {\n            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);\n        }\n        \n        .hover-lift {\n            transition: all 0.3s ease;\n        }\n        \n        .hover-lift:hover {\n            transform: translateY(-5px);\n            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);\n        }\n\n        .video-container {\n            position: relative;\n            padding-bottom: 56.25%;\n            height: 0;\n            overflow: hidden;\n        }\n\n        .video-container iframe {\n            position: absolute;\n            top: 0;\n            left: 0;\n            width: 100%;\n            height: 100%;\n            border-radius: 20px;\n        }\n\n        .program-card {\n            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.02));\n            border: 1px solid rgba(212, 175, 55, 0.2);\n            position: relative;\n            overflow: hidden;\n        }\n\n        .program-card::before {\n            content: '';\n            position: absolute;\n            top: 0;\n            left: 0;\n            right: 0;\n            height: 2px;\n            background: linear-gradient(90deg, transparent, #D4AF37, transparent);\n            animation: shimmer 2s infinite;\n        }\n\n        @keyframes shimmer {\n            0% { transform: translateX(-100%); }\n            100% { transform: translateX(100%); }\n        }\n\n        .luxury-button {\n            background: linear-gradient(135deg, #D4AF37, #F4E4C1, #D4AF37);\n            background-size: 200% 200%;\n            animation: goldShift 3s ease infinite;\n            position: relative;\n            overflow: hidden;\n        }\n\n        @keyframes goldShift {\n            0% { background-position: 0% 50%; }\n            50% { background-position: 100% 50%; }\n            100% { background-position: 0% 50%; }\n        }\n\n        .luxury-button::after {\n            content: '';\n            position: absolute;\n            top: 50%;\n            left: 50%;\n            width: 0;\n            height: 0;\n            border-radius: 50%;\n            background: rgba(255, 255, 255, 0.5);\n            transform: translate(-50%, -50%);\n            transition: width 0.6s, height 0.6s;\n        }\n\n        .luxury-button:hover::after {\n            width: 300px;\n            height: 300px;\n        }\n\n        @keyframes infinite-scroll {\n            0% {\n                transform: translateX(0);\n            }\n            100% {\n                transform: translateX(-50%);\n            }\n        }\n\n        .animate-infinite-scroll {\n            animation: infinite-scroll 40s linear infinite;\n        }\n\n        .animate-infinite-scroll:hover {
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-light: #F4E4C1;
+            --gold-dark: #B8941F;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1B1C1D;
+            overflow-x: hidden;
+        }
+        
+        .font-luxury {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37, #F4E4C1, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #D4AF37, #F4E4C1, #D4AF37);
+        }
+        
+        .luxury-border {
+            background: linear-gradient(135deg, #D4AF37, #F4E4C1, #D4AF37);
+            padding: 1px;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .shine-effect::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .parallax-bg {
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+        }
+        
+        .text-shadow-gold {
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .program-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.02));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .program-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .luxury-button {
+            background: linear-gradient(135deg, #D4AF37, #F4E4C1, #D4AF37);
+            background-size: 200% 200%;
+            animation: goldShift 3s ease infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes goldShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .luxury-button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .luxury-button:hover::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        @keyframes infinite-scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-infinite-scroll {
+            animation: infinite-scroll 40s linear infinite;
+        }
+
+        .animate-infinite-scroll:hover {
             animation-play-state: paused;
         }
     `
@@ -44,16 +232,16 @@ export default function Home() {
                 className="text-gray-300 hover:text-yellow-200 transition"
               >
                 About
-          </a>
-          <a
+              </a>
+              <a
                 href="#testimonials"
                 className="text-gray-300 hover:text-yellow-200 transition"
               >
                 Success Stories
               </a>
-          <Link href="/checkout" className="luxury-button text-black px-8 py-3 rounded-full font-semibold inline-block text-center relative z-10">
-            Reserve Your Seat
-          </Link>
+              <Link href="/checkout" className="luxury-button text-black px-8 py-3 rounded-full font-semibold inline-block text-center relative z-10">
+                Reserve Your Seat
+              </Link>
             </div>
           </div>
         </div>
@@ -98,26 +286,29 @@ export default function Home() {
 
           {/* Floating geometric shapes */}
           <motion.div
-            className="absolute top-1/4 left-1/4 w-32 h-32 border border-yellow-200/20 rotate-45            animate={{ 
+            className="absolute top-1/4 left-1/4 w-32 h-32 border border-yellow-200/20 rotate-45"
+            animate={{ 
               rotate: [45, 225, 45],
               scale: [1, 1.2, 1],
               opacity: [0.2, 0.4, 0.2]
             }}
-            transition={{ duration: 12, repeat: Infinity, ease: easeInOut" }}
+            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.div
-            className="absolute top-3/4 right-1/4 w-24 h-24 border border-yellow-200/20 rounded-full            animate={{ 
+            className="absolute top-3/4 right-1/4 w-24 h-24 border border-yellow-200/20 rounded-full"
+            animate={{ 
               scale: [1, 1.5, 1],
               opacity: [0.1, 0.3, 0.1]
             }}
-            transition={{ duration: 8, repeat: Infinity, ease: easeInOut, delay: 2 }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
           />
           <motion.div
-            className="absolute top-1/2 right-1/3 w-16 h-16 border border-yellow-200/20            animate={{ 
+            className="absolute top-1/2 right-1/3 w-16 h-16 border border-yellow-200/20"
+            animate={{ 
               rotate: [0, 180, 360],
               y: [0, -20, 0]
             }}
-            transition={{ duration: 10, repeat: Infinity, ease: easeInOut, delay: 4 }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 4 }}
           />
 
           {/* Original gradient blobs */}
@@ -131,11 +322,12 @@ export default function Home() {
             transition={{ 
               duration: 6, 
               repeat: Infinity, 
-              ease: easeInOut" 
+              ease: "easeInOut" 
             }}
           />
           <motion.div
-            className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-yellow-600/10 to-transparent rounded-full filter blur-3xl            animate={{ 
+            className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-yellow-600/10 to-transparent rounded-full filter blur-3xl"
+            animate={{ 
               y: [0, 20, 0],
               scale: [1, 0.9, 1],
               opacity: [0.1, 0.2, 0.1]
@@ -143,7 +335,7 @@ export default function Home() {
             transition={{ 
               duration: 8, 
               repeat: Infinity, 
-              ease: easeInOut,
+              ease: "easeInOut",
               delay: 3
             }}
           />
@@ -153,19 +345,32 @@ export default function Home() {
         <motion.div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <motion.path
-              d="M0,50 Q50,0 100,50 T200,50              stroke="rgba(212, 175, 55, 0.3)              strokeWidth="2              fill="none              strokeDasharray=10,5              initial={{ pathLength: 0, opacity: 0 }}
+              d="M0,50 Q50,0 100,50 T200,50"
+              stroke="rgba(212, 175, 55, 0.3)"
+              strokeWidth="2"
+              fill="none"
+              strokeDasharray="10,5"
+              initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.3 }}
               transition={{ duration: 3, delay: 1 }}
             />
             <motion.circle
-              cx=20%              cy=30%              r=2              fill="rgba(212, 175, 55, 0.5)              animate={{
+              cx="20%"
+              cy="30%"
+              r="2"
+              fill="rgba(212, 175, 55, 0.5)"
+              animate={{
                 scale: [1, 2, 1],
                 opacity: [0.5, 1, 0.5]
               }}
               transition={{ duration: 4, repeat: Infinity, delay: 2 }}
             />
             <motion.circle
-              cx=80%              cy=70%              r=2              fill="rgba(212, 175, 55, 0.5)              animate={{
+              cx="80%"
+              cy="70%"
+              r="2"
+              fill="rgba(212, 175, 55, 0.5)"
+              animate={{
                 scale: [1, 2, 1],
                 opacity: [0.5, 1, 0.5]
               }}
@@ -178,17 +383,20 @@ export default function Home() {
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:items-center">
             {/* Left Content with Staggered Animations */}
             <motion.div
-              className="order-1 lg:order-1              initial={{ opacity: 0, x: -50 }}
+              className="order-1 lg:order-1"
+              initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: easeOut" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <motion.div 
-                className="inline-flex items-center space-x-3 glass-effect px-6 py-3 rounded-full mb-8                initial={{ opacity: 0, y: 20 }}
+                className="inline-flex items-center space-x-3 glass-effect px-6 py-3 rounded-full mb-8"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <motion.div 
-                  className="w-2 h-2 gold-gradient-bg rounded-full                  animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
+                  className="w-2 h-2 gold-gradient-bg rounded-full"
+                  animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
                   transition={{ duration: 2.5, repeat: Infinity }}
                 />
                 <span className="text-sm font-medium text-yellow-200 tracking-wide">
@@ -197,19 +405,22 @@ export default function Home() {
               </motion.div>
 
               <motion.h1 
-                className="font-luxury text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1]                initial={{ opacity: 0, y: 30 }}
+                className="font-luxury text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1]"
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
                 <motion.span 
-                  className="gold-gradient text-shadow-gold block                  initial={{ opacity: 0 }}
+                  className="gold-gradient text-shadow-gold block"
+                  initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
                  Elevating Your<br />Job Search Game
                 </motion.span>
                 <motion.span 
-                  className="text-white/90 block text-4xl md:text-5xl lg:text-6xl font-medium mb-2                  initial={{ opacity: 0, scale: 0.8 }}
+                  className="text-white/90 block text-4xl md:text-5xl lg:text-6xl font-medium mb-2"
+                  initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, delay: 0.7 }}
                 >
@@ -219,31 +430,37 @@ export default function Home() {
 
               {/* Mobile Image - appears here on mobile */}
               <motion.div 
-                className="lg:hidden relative flex items-center justify-center mb-8                initial={{ opacity: 0, y: 30 }}
+                className="lg:hidden relative flex items-center justify-center mb-8"
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.8 }}
               >
                 <div className="relative">
                   {/* Mobile Background Gradient */}
                   <motion.div 
-                    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-3/4 gold-gradient-bg opacity-15 blur-3xl rounded-full                    animate={{ 
+                    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-3/4 gold-gradient-bg opacity-15 blur-3xl rounded-full"
+                    animate={{ 
                       scale: [1, 1.1, 1],
                       opacity: [0.15, 0.25, 0.15]
                     }}
                     transition={{ 
                       duration: 6, 
                       repeat: Infinity, 
-                      ease: easeInOut" 
+                      ease: "easeInOut" 
                     }}
                   />
                   <img
-                    src="/isa.png                    alt="Isabellita - CEO of Executive Power                    className="w-full h-auto scale-[1.5] mx-auto relative z-10 max-w-sm                    style={{ transformOrigin: 'bottom center' }}
+                    src="/isa.png"
+                    alt="Isabellita - CEO of Executive Power"
+                    className="w-full h-auto scale-[1.5] mx-auto relative z-10 max-w-sm"
+                    style={{ transformOrigin: 'bottom center' }}
                   />
                 </div>
               </motion.div>
 
               <motion.p 
-                className="text-xl text-gray-300/90 mb-10 leading-relaxed max-w-2xl                initial={{ opacity: 0, y: 20 }}
+                className="text-xl text-gray-300/90 mb-10 leading-relaxed max-w-2xl"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.9 }}
               >
@@ -253,37 +470,44 @@ export default function Home() {
               </motion.p>
 
               <motion.div 
-                className="flex flex-col sm:flex-row gap-4 mb-8                initial={{ opacity: 0, y: 20 }}
+                className="flex flex-col sm:flex-row gap-4 mb-8"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.1 }}
               >
                 <motion.a
-                  href="/checkout                  className="luxury-button text-black px-12 py-5 rounded-full font-bold text-lg inline-block text-center shadow-2xl relative z-10                  whileHover={{ scale: 1.05, y: -2 }}
+                  href="/checkout"
+                  className="luxury-button text-black px-12 py-5 rounded-full font-bold text-lg inline-block text-center shadow-2xl relative z-10"
+                  whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  transition={{ type: spring, stiffness: 400, damping: 17 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
                   Reserve Your Executive Session • $150
                 </motion.a>
                 <motion.a
-                  href="#testimonials                  className="glass-effect text-yellow-200 px-10 py-5 rounded-full font-medium border border-yellow-200/30 inline-block text-center                  whileHover={{ scale: 1.02, backgroundColor: rgba(212, 175, 55, 0.05)" }}
+                  href="#testimonials"
+                  className="glass-effect text-yellow-200 px-10 py-5 rounded-full font-medium border border-yellow-200/30 inline-block text-center"
+                  whileHover={{ scale: 1.02, backgroundColor: "rgba(212, 175, 55, 0.05)" }}
                   whileTap={{ scale: 0.98 }}
-                  transition={{ type: spring, stiffness: 400, damping: 17 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
                   View Client Transformations
                 </motion.a>
               </motion.div>
 
               <motion.div 
-                className="flex flex-wrap gap-8 text-sm items-center                initial={{ opacity: 0 }}
+                className="flex flex-wrap gap-8 text-sm items-center"
+                initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 1.3 }}
               >
                 <motion.div 
-                  className="flex items-center space-x-3 glass-effect px-4 py-2 rounded-full                  whileHover={{ scale: 1.05 }}
+                  className="flex items-center space-x-3 glass-effect px-4 py-2 rounded-full"
+                  whileHover={{ scale: 1.05 }}
                 >
                   <div className="flex space-x-1">
                     {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 text-yellow-200" fill="currentColor" viewBox=0 0 20 20">
+                      <svg key={i} className="w-4 h-4 text-yellow-200" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
@@ -291,10 +515,11 @@ export default function Home() {
                   <span className="text-gray-300 font-medium">Exceptional • 500+ Executives</span>
                 </motion.div>
                 <motion.div 
-                  className="flex items-center space-x-3 glass-effect px-4 py-2 rounded-full                  whileHover={{ scale: 1.05 }}
+                  className="flex items-center space-x-3 glass-effect px-4 py-2 rounded-full"
+                  whileHover={{ scale: 1.05 }}
                 >
-                  <svg className="w-5 h-5 text-yellow-200" fill="currentColor" viewBox=0 0 20 20">
-                    <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                  <svg className="w-5 h-5 text-yellow-200" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-300 font-medium">Guaranteed Excellence</span>
                 </motion.div>
@@ -302,32 +527,37 @@ export default function Home() {
 
               {/* Forbes Badge */}
               <motion.div 
-                className="flex items-center justify-center mt-8                initial={{ opacity: 0, y: 20 }}
+                className="flex items-center justify-center mt-8"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.5 }}
               >
                 <motion.div 
-                  className="glass-effect p-3 rounded-xl border-2 border-yellow-200/30 hover:border-yellow-200/50 transition-all duration-300                  whileHover={{ scale: 1.1, y: -3 }}
-                  transition={{ type: spring, stiffness: 400, damping: 17 }}
+                  className="glass-effect p-3 rounded-xl border-2 border-yellow-200/30 hover:border-yellow-200/50 transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -3 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
                   <img 
                     src="/FCC-Badge-Square-Black copy.avif" 
                     alt="Forbes Coaches Council Official Member" 
-                    className="h-12 w-12 object-contain                  />
+                    className="h-12 w-12 object-contain"
+                  />
                 </motion.div>
               </motion.div>
             </motion.div>
 
             {/* Right Image Section with Advanced Animations - Desktop Only */}
             <motion.div 
-              className="hidden lg:flex relative items-end justify-center order-2 lg:order-2              initial={{ opacity: 0, x: 50 }}
+              className="hidden lg:flex relative items-end justify-center order-2 lg:order-2"
+              initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.4, ease: easeOut" }}
+              transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             >
               <div className="relative max-w-full mx-auto">
                 {/* Animated Background Gradients */}
                 <motion.div 
-                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-3/4 gold-gradient-bg opacity-15 blur-3xl rounded-full                  animate={{ 
+                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-3/4 gold-gradient-bg opacity-15 blur-3xl rounded-full"
+                  animate={{ 
                     scale: [1, 1.1, 1],
                     rotate: [0, 180, 360],
                     opacity: [0.15, 0.25, 0.15]
@@ -335,46 +565,53 @@ export default function Home() {
                   transition={{ 
                     duration: 10, 
                     repeat: Infinity, 
-                    ease: easeInOut" 
+                    ease: "easeInOut" 
                   }}
                 />
                 <motion.div 
-                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1/2 gold-gradient-bg opacity-20 blur-2xl rounded-full                  animate={{ 
+                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1/2 gold-gradient-bg opacity-20 blur-2xl rounded-full"
+                  animate={{ 
                     scale: [1, 0.9, 1],
                     y: [0, -10, 0]
                   }}
                   transition={{ 
                     duration: 6, 
                     repeat: Infinity, 
-                    ease: easeInOut" 
+                    ease: "easeInOut" 
                   }}
                 />
                 <motion.div 
-                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1/3 gold-gradient-bg opacity-25 blur-xl rounded-full                  animate={{ 
+                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1/3 gold-gradient-bg opacity-25 blur-xl rounded-full"
+                  animate={{ 
                     scale: [1, 1.2, 1],
                     opacity: [0.25, 0.4, 0.25]
                   }}
                   transition={{ 
                     duration: 4, 
                     repeat: Infinity, 
-                    ease: easeInOut" 
+                    ease: "easeInOut" 
                   }}
                 />
                 
                 {/* Main Image - Responsive */}
                 <motion.div 
-                  className="relative mb-0 lg:-mb-96                  initial={{ opacity: 0, scale: 0.8, y: 50 }}
+                  className="relative mb-0 lg:-mb-96"
+                  initial={{ opacity: 0, scale: 0.8, y: 50 }}
                   animate={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={{ duration: 1.2, delay: 0.6, ease: easeOut" }}
+                  transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
                 >
                   <img
-                    src="/isa.png                    alt="Isabellita - CEO of Executive Power                    className="w-full h-auto scale-[1.2] sm:scale-[1.5] lg:scale-[2] mx-auto relative z-10 max-w-xs sm:max-w-sm lg:max-w-none                    style={{ transformOrigin: 'bottom center' }}
+                    src="/isa.png"
+                    alt="Isabellita - CEO of Executive Power"
+                    className="w-full h-auto scale-[1.2] sm:scale-[1.5] lg:scale-[2] mx-auto relative z-10 max-w-xs sm:max-w-sm lg:max-w-none"
+                    style={{ transformOrigin: 'bottom center' }}
                   />
                 </motion.div>
                 
                 {/* Animated Floating Badges */}
                 <motion.div 
-                  className="absolute -right-4 top-20 glass-effect px-4 py-2 rounded-full                  initial={{ opacity: 0, x: 20 }}
+                  className="absolute -right-4 top-20 glass-effect px-4 py-2 rounded-full"
+                  initial={{ opacity: 0, x: 20 }}
                   animate={{ 
                     opacity: 1, 
                     x: 0,
@@ -383,7 +620,7 @@ export default function Home() {
                   transition={{ 
                     opacity: { duration: 0.6, delay: 1.5 },
                     x: { duration: 0.6, delay: 1.5 },
-                    y: { duration: 4, repeat: Infinity, ease: easeInOut" }
+                    y: { duration: 4, repeat: Infinity, ease: "easeInOut" }
                   }}
                   whileHover={{ scale: 1.05, y: -5 }}
                 >
@@ -392,7 +629,8 @@ export default function Home() {
                   </span>
                 </motion.div>
                 <motion.div
-                  className="absolute -left-4 top-32 glass-effect px-4 py-2 rounded-full                  initial={{ opacity: 0, x: -20 }}
+                  className="absolute -left-4 top-32 glass-effect px-4 py-2 rounded-full"
+                  initial={{ opacity: 0, x: -20 }}
                   animate={{ 
                     opacity: 1, 
                     x: 0,
@@ -401,7 +639,7 @@ export default function Home() {
                   transition={{ 
                     opacity: { duration: 0.6, delay: 1.7 },
                     x: { duration: 0.6, delay: 1.7 },
-                    y: { duration: 5, repeat: Infinity, ease: easeInOut, delay: 2 }
+                    y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }
                   }}
                   whileHover={{ scale: 1.05, y: 5 }}
                 >
@@ -420,14 +658,16 @@ export default function Home() {
         <div className="absolute inset-0 parallax-bg"></div>
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
-            className="text-center mb-20            initial={{ opacity: 0, y: 30 }}
+            className="text-center mb-20"
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center space-x-2 glass-effect px-6 py-3 rounded-full mb-8">
               <motion.div 
-                className="w-2 h-2 gold-gradient-bg rounded-full                animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
+                className="w-2 h-2 gold-gradient-bg rounded-full"
+                animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
                 transition={{ duration: 2.5, repeat: Infinity }}
               />
               <span className="text-sm font-medium text-yellow-200 tracking-wide">
@@ -445,7 +685,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 xl:grid-cols-6 gap-8 max-w-7xl mx-auto">
             {/* Expert Career Transition Advisor */}
             <motion.div
-              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-1 xl:col-span-2              initial={{ opacity: 0, y: 30 }}
+              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-1 xl:col-span-2"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
@@ -454,13 +695,14 @@ export default function Home() {
                 <h3 className="font-luxury text-2xl font-bold text-white mb-4">Expert Career Transition Advisor</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                Isabelita Castilho is a distinguished executive career transition advisor with over a decade of expertise in guiding senior leaders through successful career transitions. She helps professionals navigate today's competitive job market with unshakeable confidence and strategic precision.
+                Isabelita Castilho is a distinguished executive career transition advisor with over a decade of expertise in guiding senior leaders through successful career transitions. She helps professionals navigate today&apos;s competitive job market with unshakeable confidence and strategic precision.
               </p>
             </motion.div>
 
             {/* Award-Winning Recognition */}
             <motion.div
-              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-1 xl:col-span-2              initial={{ opacity: 0, y: 30 }}
+              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-1 xl:col-span-2"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
@@ -469,13 +711,14 @@ export default function Home() {
                 <h3 className="font-luxury text-2xl font-bold text-white mb-4">Award-Winning Recognition</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                A prestigious Forbes Coaches Council Member and winner of the coveted Best Career Coach Award 2025, Isabelita's exceptional accolades underscore her unparalleled leadership and transformative impact in the executive coaching industry.
+                A prestigious Forbes Coaches Council Member and winner of the coveted Best Career Coach Award 2025, Isabelita&apos;s exceptional accolades underscore her unparalleled leadership and transformative impact in the executive coaching industry.
               </p>
             </motion.div>
 
             {/* Global Impact & Proven Results */}
             <motion.div
-              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-2 xl:col-span-2              initial={{ opacity: 0, y: 30 }}
+              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-2 xl:col-span-2"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
@@ -490,7 +733,8 @@ export default function Home() {
 
             {/* Comprehensive & Innovative Approach */}
             <motion.div
-              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-1 xl:col-span-3              initial={{ opacity: 0, y: 30 }}
+              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-1 xl:col-span-3"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
@@ -505,7 +749,8 @@ export default function Home() {
 
             {/* Published Author & Speaker */}
             <motion.div
-              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-1 xl:col-span-3              initial={{ opacity: 0, y: 30 }}
+              className="glass-effect p-8 rounded-2xl hover-lift lg:col-span-1 xl:col-span-3"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
@@ -514,23 +759,25 @@ export default function Home() {
                 <h3 className="font-luxury text-2xl font-bold text-white mb-4">Published Author & Speaker</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                As a published author, international speaker, and host of the acclaimed Happy Monday Executives" podcast and YouTube channel, Isabelita consistently shares game-changing insights that make a lasting impact on executive careers worldwide, reaching thousands of leaders monthly.
+                As a published author, international speaker, and host of the acclaimed &quot;Happy Monday Executives&quot; podcast and YouTube channel, Isabelita consistently shares game-changing insights that make a lasting impact on executive careers worldwide, reaching thousands of leaders monthly.
               </p>
             </motion.div>
           </div>
           
           {/* CTA after About Us cards */}
           <motion.div
-            className="text-center mt-16            initial={{ opacity: 0, y: 30 }}
+            className="text-center mt-16"
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <motion.a 
               href="/checkout" 
-              className="luxury-button text-black px-10 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10              whileHover={{ scale: 1.05, y: -3 }}
+              className="luxury-button text-black px-10 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10"
+              whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
-              transition={{ type: spring, stiffness: 400, damping: 17 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               Experience Executive Excellence • Start Today
             </motion.a>
@@ -553,8 +800,11 @@ export default function Home() {
             <div className="bg-[#1B1C1D] rounded-3xl p-8">
               <div className="video-container">
                 <iframe
-                  src="https://player.vimeo.com/video/1120938621?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479                  title=Executive Power Success Stories                  frameBorder={0}
-                  allow=autoplay; fullscreen; picture-in-picture; clipboard-write                  allowFullScreen
+                  src="https://player.vimeo.com/video/1120938621?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  title="Executive Power Success Stories"
+                  frameBorder={0}
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  allowFullScreen
                 ></iframe>
               </div>
             </div>
@@ -562,16 +812,18 @@ export default function Home() {
           
           {/* CTA after Video */}
           <motion.div
-            className="text-center mt-16            initial={{ opacity: 0, y: 30 }}
+            className="text-center mt-16"
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
             <motion.a 
               href="/checkout" 
-              className="luxury-button text-black px-12 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10              whileHover={{ scale: 1.05, y: -3 }}
+              className="luxury-button text-black px-12 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10"
+              whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
-              transition={{ type: spring, stiffness: 400, damping: 17 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               Join The Success Stories • Reserve Your Seat
             </motion.a>
@@ -605,7 +857,8 @@ export default function Home() {
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-I had the pleasure of working with Isabelita through the TBG program and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing.                  </p>
+                    &quot;I had the pleasure of working with Isabelita through the TBG program and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">C.M.</div>
                     <div className="text-sm text-yellow-200">Dubai to Dublin Transition</div>
@@ -618,7 +871,8 @@ I had the pleasure of working with Isabelita through the TBG program and what a 
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. She helped me discover what I really wanted in my career journey.                  </p>
+                    &quot;For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. She helped me discover what I really wanted in my career journey.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">L.Q.</div>
                     <div className="text-sm text-yellow-200">France to Argentina Transition</div>
@@ -631,7 +885,8 @@ For the past 3 months, Isabelita has been my rock, guiding me through what turne
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move.                  </p>
+                    &quot;I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">H.R.</div>
                     <div className="text-sm text-yellow-200">Dubai</div>
@@ -644,7 +899,8 @@ I was lucky enough to be mentored by Isabelita. An incredible person with an env
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-Isabelita supported me on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun.                  </p>
+                    &quot;Isabelita supported me on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">O.K.</div>
                     <div className="text-sm text-yellow-200">Netherlands</div>
@@ -657,7 +913,8 @@ Isabelita supported me on a bi-weekly basis to find my next assignment. Her way 
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. Her extensive professional network and remarkable ability to connect people make her an invaluable asset.                  </p>
+                    &quot;I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. Her extensive professional network and remarkable ability to connect people make her an invaluable asset.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">S.M.</div>
                     <div className="text-sm text-yellow-200">Germany</div>
@@ -670,7 +927,8 @@ I had the pleasure of working with Isabelita, a dedicated and success-oriented p
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-I have learned so much from Isabelita! She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit.                  </p>
+                    &quot;I have learned so much from Isabelita! She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">P.C.</div>
                     <div className="text-sm text-yellow-200">United States</div>
@@ -686,7 +944,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-I had the pleasure of working with Isabelita through the TBG program and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing.                  </p>
+                    &quot;I had the pleasure of working with Isabelita through the TBG program and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">C.M.</div>
                     <div className="text-sm text-yellow-200">Dubai to Dublin Transition</div>
@@ -699,7 +958,8 @@ I had the pleasure of working with Isabelita through the TBG program and what a 
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. She helped me discover what I really wanted in my career journey.                  </p>
+                    &quot;For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. She helped me discover what I really wanted in my career journey.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">L.Q.</div>
                     <div className="text-sm text-yellow-200">France to Argentina Transition</div>
@@ -712,7 +972,8 @@ For the past 3 months, Isabelita has been my rock, guiding me through what turne
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move.                  </p>
+                    &quot;I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">H.R.</div>
                     <div className="text-sm text-yellow-200">Dubai</div>
@@ -725,7 +986,8 @@ I was lucky enough to be mentored by Isabelita. An incredible person with an env
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-Isabelita supported me on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun.                  </p>
+                    &quot;Isabelita supported me on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">O.K.</div>
                     <div className="text-sm text-yellow-200">Netherlands</div>
@@ -738,7 +1000,8 @@ Isabelita supported me on a bi-weekly basis to find my next assignment. Her way 
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. Her extensive professional network and remarkable ability to connect people make her an invaluable asset.                  </p>
+                    &quot;I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. Her extensive professional network and remarkable ability to connect people make her an invaluable asset.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">S.M.</div>
                     <div className="text-sm text-yellow-200">Germany</div>
@@ -751,7 +1014,8 @@ I had the pleasure of working with Isabelita, a dedicated and success-oriented p
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-I have learned so much from Isabelita! She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit.                  </p>
+                    &quot;I have learned so much from Isabelita! She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit.&quot;
+                  </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">P.C.</div>
                     <div className="text-sm text-yellow-200">United States</div>
@@ -768,14 +1032,16 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
         <div className="absolute inset-0 parallax-bg"></div>
         <div className="container mx-auto max-w-7xl relative z-10">
           <motion.div
-            className="text-center mb-20            initial={{ opacity: 0, y: 30 }}
+            className="text-center mb-20"
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center space-x-2 glass-effect px-6 py-3 rounded-full mb-8">
               <motion.div 
-                className="w-2 h-2 gold-gradient-bg rounded-full                animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
+                className="w-2 h-2 gold-gradient-bg rounded-full"
+                animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
                 transition={{ duration: 2.5, repeat: Infinity }}
               />
               <span className="text-sm font-medium text-yellow-200 tracking-wide">
@@ -793,7 +1059,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Comprehensive Executive Career Roadmap - Now First */}
             <motion.div 
-              className="glass-effect p-10 rounded-3xl hover-lift border-2 border-yellow-200/40 bg-gradient-to-br from-yellow-600/5 to-yellow-800/5 relative              initial={{ opacity: 0, y: 30 }}
+              className="glass-effect p-10 rounded-3xl hover-lift border-2 border-yellow-200/40 bg-gradient-to-br from-yellow-600/5 to-yellow-800/5 relative"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
@@ -824,8 +1091,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                   Get your comprehensive career strategy report with CV/LinkedIn feedback, target companies, executive recruiter network, and proven outreach templates.
                 </p>
                 <div className="flex items-center justify-center mb-6 glass-effect px-4 py-3 rounded-full">
-                  <svg className="w-5 h-5 text-yellow-200 mr-3" fill="currentColor" viewBox=0 0 20 20">
-                    <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                  <svg className="w-5 h-5 text-yellow-200 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-sm font-semibold text-white">One 60-minute strategy session + comprehensive written report delivered within 10-15 business days</span>
                 </div>
@@ -836,8 +1103,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                   <h4 className="font-luxury text-xl font-bold text-white mb-4">What You Get:</h4>
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox=0 0 20 20">
-                        <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
                         <span className="font-semibold text-white">10 Target Companies</span>
@@ -845,8 +1112,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox=0 0 20 20">
-                        <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
                         <span className="font-semibold text-white">30 Key Headhunters</span>
@@ -854,8 +1121,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox=0 0 20 20">
-                        <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
                         <span className="font-semibold text-white">CV & LinkedIn Feedback</span>
@@ -863,8 +1130,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox=0 0 20 20">
-                        <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
                         <span className="font-semibold text-white">Strategic Roadmap</span>
@@ -893,9 +1160,11 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
               </div>
 
               <motion.a
-                href="/checkout/form?package=comprehensive&price=500                className="luxury-button text-black w-full py-4 rounded-full font-bold text-lg inline-block text-center relative z-10 shadow-2xl                whileHover={{ scale: 1.02, y: -2 }}
+                href="/checkout/form?package=comprehensive&price=500"
+                className="luxury-button text-black w-full py-4 rounded-full font-bold text-lg inline-block text-center relative z-10 shadow-2xl"
+                whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                transition={{ type: spring, stiffness: 400, damping: 17 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 Get Your Complete Career Roadmap
               </motion.a>
@@ -903,7 +1172,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
 
             {/* Strategic Roadmap Light Plan - Now Second */}
             <motion.div 
-              className="glass-effect p-10 rounded-3xl hover-lift border border-yellow-600/20              initial={{ opacity: 0, y: 30 }}
+              className="glass-effect p-10 rounded-3xl hover-lift border border-yellow-600/20"
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
@@ -930,8 +1200,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                   Get your comprehensive career strategy report with your CV/LinkedIn feedback.
                 </p>
                 <div className="flex items-center justify-center mb-6 glass-effect px-4 py-3 rounded-full">
-                  <svg className="w-5 h-5 text-yellow-200 mr-3" fill="currentColor" viewBox=0 0 20 20">
-                    <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                  <svg className="w-5 h-5 text-yellow-200 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-sm font-semibold text-white">One 60-minute strategy session + comprehensive written report delivered within 10-15 business days</span>
                 </div>
@@ -942,8 +1212,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                   <h4 className="font-luxury text-xl font-bold text-white mb-4">What You Get:</h4>
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox=0 0 20 20">
-                        <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
                         <span className="font-semibold text-white">CV & LinkedIn Feedback</span>
@@ -951,8 +1221,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox=0 0 20 20">
-                        <path fillRule=evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule=evenodd" />
+                      <svg className="w-5 h-5 text-yellow-200 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
                         <span className="font-semibold text-white">Strategic Roadmap</span>
@@ -981,9 +1251,11 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
               </div>
 
               <motion.a
-                href="/checkout/form?package=basic&price=150                className="luxury-button text-black w-full py-4 rounded-full font-bold text-lg inline-block text-center relative z-10                whileHover={{ scale: 1.02, y: -2 }}
+                href="/checkout/form?package=basic&price=150"
+                className="luxury-button text-black w-full py-4 rounded-full font-bold text-lg inline-block text-center relative z-10"
+                whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                transition={{ type: spring, stiffness: 400, damping: 17 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 Get Your Strategic Roadmap
               </motion.a>
@@ -1135,7 +1407,8 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                 <img 
                   src="/executivepower.avif" 
                   alt="Executive Power Logo" 
-                  className="h-10 w-auto                />
+                  className="h-10 w-auto"
+                />
               </div>
               <p className="text-gray-400 text-sm">
                 Transforming leaders into legends since 2009.
@@ -1151,13 +1424,17 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
                 </li>
                 <li>
                   <a
-                    href="#testimonials                    className="hover:text-yellow-200 transition                  >
+                    href="#testimonials"
+                    className="hover:text-yellow-200 transition"
+                  >
                     Success Stories
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.executivespower.com                    className="hover:text-yellow-200 transition                  >
+                    href="https://www.executivespower.com"
+                    className="hover:text-yellow-200 transition"
+                  >
                     Main Website
                   </a>
                 </li>
@@ -1187,15 +1464,21 @@ I have learned so much from Isabelita! She taught me the immense value of Visibi
               <h4 className="font-semibold text-yellow-200 mb-4">Connect</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#                  className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition                >
+                  href="#"
+                  className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition"
+                >
                   <span className="text-yellow-200">in</span>
-        </a>
-        <a
-                  href="#                  className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition                >
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition"
+                >
                   <span className="text-yellow-200">X</span>
-        </a>
-        <a
-                  href="#                  className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition                >
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition"
+                >
                   <span className="text-yellow-200">@</span>
                 </a>
               </div>
