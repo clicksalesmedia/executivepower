@@ -3,22 +3,20 @@ import Stripe from 'stripe';
 import { prisma } from "@/lib/prisma";
 import { LeadStatus } from '@prisma/client';
 
-// Check if Stripe keys are available
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('STRIPE_SECRET_KEY environment variable is not set');
-}
-
-if (!process.env.STRIPE_WEBHOOK_SECRET) {
-  throw new Error('STRIPE_WEBHOOK_SECRET environment variable is not set');
-}
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2025-08-27.basil',
-});
-
-const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
-
 export async function POST(request: NextRequest) {
+  // Check if Stripe is properly configured at runtime
+  if (!process.env.STRIPE_SECRET_KEY || !process.env.STRIPE_WEBHOOK_SECRET) {
+    return NextResponse.json(
+      { error: 'Stripe webhook is not configured properly' },
+      { status: 500 }
+    );
+  }
+
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+    apiVersion: '2025-08-27.basil',
+  });
+
+  const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
   const body = await request.text();
   const sig = request.headers.get('stripe-signature')!;
 
