@@ -75,30 +75,44 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// PUT - Update lead status (protected route)
+// PUT - Update lead status (protected route for admin, or public for CV upload)
 export async function PUT(request: NextRequest) {
   try {
-    const session = await getServerSession(authOptions);
-    
-    if (!session) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
     const body = await request.json();
-    const { id, status, paymentIntentId, notes } = body;
+    const { id, status, paymentIntentId, notes, cvUrl, cvPublicId, cvFileSize, cvFormat } = body;
 
     if (!id) {
       return NextResponse.json({ error: 'Lead ID is required' }, { status: 400 });
+    }
+
+    // Check if this is a CV upload (public) or admin update (protected)
+    const isCvUpdate = cvUrl || cvPublicId || cvFileSize || cvFormat;
+    
+    if (!isCvUpdate) {
+      // This is an admin update, require authentication
+      const session = await getServerSession(authOptions);
+      if (!session) {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+      }
     }
 
     const updateData: {
       status?: LeadStatus;
       paymentIntentId?: string;
       notes?: string;
+      cvUrl?: string;
+      cvPublicId?: string;
+      cvFileSize?: number;
+      cvFormat?: string;
     } = {};
+    
     if (status) updateData.status = status as LeadStatus;
     if (paymentIntentId) updateData.paymentIntentId = paymentIntentId;
     if (notes !== undefined) updateData.notes = notes;
+    if (cvUrl) updateData.cvUrl = cvUrl;
+    if (cvPublicId) updateData.cvPublicId = cvPublicId;
+    if (cvFileSize) updateData.cvFileSize = cvFileSize;
+    if (cvFormat) updateData.cvFormat = cvFormat;
 
     const updatedLead = await prisma.lead.update({
       where: { id },

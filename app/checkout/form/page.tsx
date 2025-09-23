@@ -123,7 +123,7 @@ export default function CheckoutFormPage() {
     setIsSubmitting(true);
 
     try {
-      // Save lead to API
+      // First, save lead to API
       const leadData = {
         name: formData.name,
         email: formData.email,
@@ -153,10 +153,45 @@ export default function CheckoutFormPage() {
 
       const { lead } = await response.json();
 
+      // Upload CV to Cloudinary if file exists
+      let cvUploadResult = null;
+      if (formData.cvFile) {
+        const cvFormData = new FormData();
+        cvFormData.append('file', formData.cvFile);
+        cvFormData.append('leadId', lead.id);
+
+        const cvResponse = await fetch('/api/upload-cv', {
+          method: 'POST',
+          body: cvFormData,
+        });
+
+        if (cvResponse.ok) {
+          cvUploadResult = await cvResponse.json();
+          
+          // Update lead with CV information
+          await fetch('/api/leads', {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id: lead.id,
+              cvUrl: cvUploadResult.url,
+              cvPublicId: cvUploadResult.publicId,
+              cvFileSize: cvUploadResult.size,
+              cvFormat: cvUploadResult.format,
+            }),
+          });
+        } else {
+          console.warn('CV upload failed, but continuing with form submission');
+        }
+      }
+
       // Store form data in sessionStorage for payment processing
       sessionStorage.setItem('checkoutFormData', JSON.stringify({
         ...formData,
         cvFileName: formData.cvFile?.name,
+        cvUrl: cvUploadResult?.url,
         packageId,
         price,
         leadId: lead.id

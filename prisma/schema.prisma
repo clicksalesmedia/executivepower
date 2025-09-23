@@ -74,6 +74,10 @@ model Lead {
   jobSearchDuration    String?
   freelanceConsulting  String?
   cvFileName           String?
+  cvUrl                String?
+  cvPublicId           String?
+  cvFileSize           Int?
+  cvFormat             String?
   packageId            String
   packageName          String
   price                Float
