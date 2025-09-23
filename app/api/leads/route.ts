@@ -1,0 +1,113 @@
+import { NextRequest, NextResponse } from 'next/server';
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+import { LeadStatus } from '@prisma/client';
+
+// GET - Fetch all leads (protected route)
+export async function GET() {
+  try {
+    const session = await getServerSession(authOptions);
+    
+    if (!session) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
+    const leads = await prisma.lead.findMany({
+      orderBy: {
+        createdAt: 'desc'
+      }
+    });
+    
+    return NextResponse.json({ leads });
+  } catch (error) {
+    console.error('Error fetching leads:', error);
+    return NextResponse.json({ error: 'Failed to fetch leads' }, { status: 500 });
+  }
+}
+
+// POST - Create new lead (public route for form submissions)
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const {
+      name,
+      email,
+      linkedinUrl,
+      currentEmployer,
+      jobTitles,
+      jobSearchDuration,
+      freelanceConsulting,
+      cvFileName,
+      packageId,
+      packageName,
+      price,
+      currency
+    } = body;
+
+    // Validate required fields
+    if (!name || !email || !packageId) {
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+    }
+
+    const newLead = await prisma.lead.create({
+      data: {
+        name,
+        email,
+        linkedinUrl,
+        currentEmployer,
+        jobTitles,
+        jobSearchDuration,
+        freelanceConsulting,
+        cvFileName,
+        packageId,
+        packageName,
+        price,
+        currency: currency || 'EUR',
+        status: LeadStatus.PENDING
+      }
+    });
+
+    return NextResponse.json({ lead: newLead }, { status: 201 });
+  } catch (error) {
+    console.error('Error creating lead:', error);
+    return NextResponse.json({ error: 'Failed to create lead' }, { status: 500 });
+  }
+}
+
+// PUT - Update lead status (protected route)
+export async function PUT(request: NextRequest) {
+  try {
+    const session = await getServerSession(authOptions);
+    
+    if (!session) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
+    const body = await request.json();
+    const { id, status, paymentIntentId, notes } = body;
+
+    if (!id) {
+      return NextResponse.json({ error: 'Lead ID is required' }, { status: 400 });
+    }
+
+    const updateData: {
+      status?: LeadStatus;
+      paymentIntentId?: string;
+      notes?: string;
+    } = {};
+    if (status) updateData.status = status as LeadStatus;
+    if (paymentIntentId) updateData.paymentIntentId = paymentIntentId;
+    if (notes !== undefined) updateData.notes = notes;
+
+    const updatedLead = await prisma.lead.update({
+      where: { id },
+      data: updateData
+    });
+
+    return NextResponse.json({ lead: updatedLead });
+  } catch (error) {
+    console.error('Error updating lead:', error);
+    return NextResponse.json({ error: 'Failed to update lead' }, { status: 500 });
+  }
+}
