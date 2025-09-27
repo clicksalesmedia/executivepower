@@ -225,7 +225,7 @@ export default function Home() {
                 href="#program"
                 className="text-gray-300 hover:text-yellow-200 transition"
               >
-                Program
+                Elite Premium
               </a>
               <a
                 href="#about"
@@ -1419,7 +1419,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
                   <a href="#program" className="hover:text-yellow-200 transition">
-                    Program Details
+                    Elite Premium Details
                   </a>
                 </li>
                 <li>
