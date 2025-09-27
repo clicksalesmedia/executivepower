@@ -758,7 +758,8 @@ opportunities.
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              Experience Executive Excellence • Start Today
+              Land Your Next Executive Role with Isabelita<br />
+              Rush now before all seats are taken!
             </motion.a>
           </motion.div>
         </div>
@@ -772,7 +773,7 @@ opportunities.
               <span className="gold-gradient">Experience The Transformation</span>
             </h2>
             <p className="text-xl text-gray-400">
-              Watch how executives revolutionized their careers
+            Watch how executives revolutionized their careers
             </p>
           </div>
           <div className="luxury-border rounded-3xl p-1">
