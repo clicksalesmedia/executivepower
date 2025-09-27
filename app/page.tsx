@@ -1058,14 +1058,12 @@ opportunities.
                   Strategic Job Search Intelligence for Senior Leaders with Job Landing Plan
                 </p>
                 <div className="mb-6">
-                  <div className="inline-flex items-center space-x-4">
-                    <span className="font-luxury text-5xl font-bold gold-gradient">
+                  <div className="text-center">
+                    <div className="font-luxury text-6xl md:text-7xl font-bold gold-gradient mb-2">
                       EUR 500/ Month - One Time
-                    </span>
-                    <div className="text-left">
-                      <div className="text-red-400 font-bold">NON-REFUNDABLE</div>
-                      <div className="text-sm text-gray-400">Complete Package</div>
                     </div>
+                    <div className="text-sm gold-gradient font-medium">NON-REFUNDABLE</div>
+                    <div className="text-lg text-gray-400 mt-2">Complete Package</div>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-6">
@@ -1167,14 +1165,12 @@ opportunities.
                   Strategic Job Search Intelligence for Senior Leaders with Job Landing Recommendations Actions
                 </p>
                 <div className="mb-6">
-                  <div className="inline-flex items-center space-x-4">
-                    <span className="font-luxury text-5xl font-bold gold-gradient">
+                  <div className="text-center">
+                    <div className="font-luxury text-6xl md:text-7xl font-bold gold-gradient mb-2">
                       EUR 150/ Month - One Time
-                    </span>
-                    <div className="text-left">
-                      <div className="text-red-400 font-bold">NON-REFUNDABLE</div>
-                      <div className="text-sm text-gray-400">Single Payment</div>
                     </div>
+                    <div className="text-sm gold-gradient font-medium">NON-REFUNDABLE</div>
+                    <div className="text-lg text-gray-400 mt-2">Single Payment</div>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-6">
