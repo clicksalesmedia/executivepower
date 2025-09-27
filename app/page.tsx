@@ -1059,8 +1059,8 @@ opportunities.
                 </p>
                 <div className="mb-6">
                   <div className="text-center">
-                    <div className="font-luxury text-6xl md:text-7xl font-bold gold-gradient mb-2">
-                      EUR 500/ Month - One Time
+                    <div className="font-luxury text-3xl md:text-4xl font-bold gold-gradient mb-2">
+                      €500/ Month - One Time
                     </div>
                     <div className="text-sm gold-gradient font-medium">NON-REFUNDABLE</div>
                     <div className="text-lg text-gray-400 mt-2">Complete Package</div>
@@ -1086,7 +1086,7 @@ opportunities.
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <span className="font-semibold text-white">🏢 10 Target Companies</span>
+                        <span className="font-semibold text-white"> 10 Target Companies</span>
                         <p className="text-gray-400 text-sm mt-1">Carefully selected organizations aligned with your experience, salary expectations, and career goals. Each company profiled with key decision makers and current opportunities.</p>
                       </div>
                     </div>
@@ -1095,7 +1095,7 @@ opportunities.
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <span className="font-semibold text-white">🎯 30 Key Headhunters</span>
+                        <span className="font-semibold text-white"> 30 Key Headhunters</span>
                         <p className="text-gray-400 text-sm mt-1">Curated list of executive recruiters specializing in your industry and function, with contact details and relationship-building strategies.</p>
                       </div>
                     </div>
@@ -1166,8 +1166,8 @@ opportunities.
                 </p>
                 <div className="mb-6">
                   <div className="text-center">
-                    <div className="font-luxury text-6xl md:text-7xl font-bold gold-gradient mb-2">
-                      EUR 150/ Month - One Time
+                    <div className="font-luxury text-3xl md:text-4xl font-bold gold-gradient mb-2">
+                      €150/ Month - One Time
                     </div>
                     <div className="text-sm gold-gradient font-medium">NON-REFUNDABLE</div>
                     <div className="text-lg text-gray-400 mt-2">Single Payment</div>
@@ -1193,7 +1193,7 @@ opportunities.
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <span className="font-semibold text-white">📄 CV &amp; LinkedIn Feedback</span>
+                        <span className="font-semibold text-white"> CV &amp; LinkedIn Feedback</span>
                         <p className="text-gray-400 text-sm mt-1">Professional analysis and optimization recommendations for your CV and LinkedIn profile to maximize executive appeal and ATS compatibility.</p>
                       </div>
                     </div>
@@ -1202,7 +1202,7 @@ opportunities.
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <span className="font-semibold text-white">🗺️ Strategic Roadmap</span>
+                        <span className="font-semibold text-white"> Strategic Roadmap</span>
                         <p className="text-gray-400 text-sm mt-1">Recommendations for your next steps with a comprehensive customized (for your case specifically) report, including market trends.</p>
                       </div>
                     </div>
@@ -1446,7 +1446,7 @@ opportunities.
                 />
               </div>
               <p className="text-gray-400 text-sm">
-                Transforming leaders into legends since 2009.
+                Transforming leaders into legends since 2015.
               </p>
             </div>
             <div>
@@ -1476,26 +1476,6 @@ opportunities.
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-yellow-200 mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-yellow-200 transition">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-yellow-200 transition">
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-yellow-200 transition">
-                    Refund Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
               <h4 className="font-semibold text-yellow-200 mb-4">Connect</h4>
               <div className="flex space-x-4">
                 <a
@@ -1503,18 +1483,6 @@ opportunities.
                   className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition"
                 >
                   <span className="text-yellow-200">in</span>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition"
-                >
-                  <span className="text-yellow-200">X</span>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition"
-                >
-                  <span className="text-yellow-200">@</span>
                 </a>
               </div>
             </div>
@@ -1527,6 +1495,15 @@ opportunities.
           </div>
         </div>
       </footer>
+      
+      {/* Footer Image */}
+      <div className="w-full">
+        <img 
+          src="/footerexecutive.jpg" 
+          alt="Executive Power Footer" 
+          className="w-full h-auto"
+        />
+      </div>
     </>
   );
 }
