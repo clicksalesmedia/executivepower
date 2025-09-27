@@ -831,174 +831,314 @@ opportunities.
             <div className="flex animate-infinite-scroll gap-8">
               {/* First set of testimonials */}
               <div className="flex gap-8 flex-shrink-0">
-                {/* C.M - Dubai to Dublin */}
+                {/* C.M - Landed a new VP Job */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;I had the pleasure of working with Isabelita through the TBG program and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing.&quot;
+                    &quot;I had the pleasure of working with Isabelita and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing. She provided clear strategies, practical advice and also helped me approach my career with confidence and determination.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">C.M.</div>
-                    <div className="text-sm text-yellow-200">Dubai to Dublin Transition</div>
+                    <div className="text-sm text-yellow-200">Landed a new VP Job (Kenyan who moved from Dubai to Dublin)</div>
                   </div>
                 </div>
 
-                {/* L.Q - France to Argentina */}
+                {/* L.Q - Landed a CEO Dream Job */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. She helped me discover what I really wanted in my career journey.&quot;
+                    &quot;For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. From our very first session to finding my exciting new role, she was there every step of the way. She didn&apos;t just help me find a job - she helped me discover what I really wanted in my career journey.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">L.Q.</div>
-                    <div className="text-sm text-yellow-200">France to Argentina Transition</div>
+                    <div className="text-sm text-yellow-200">Landed a CEO Dream Job (Brazilian who moved from France to Argentina)</div>
                   </div>
                 </div>
 
-                {/* H.R - Dubai */}
+                {/* H.R - Started his Own Startup Business */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move.&quot;
+                    &quot;I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move. In addition to the technical skills she uses to guide her mentees, her relationship network is impressive and makes all the difference.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">H.R.</div>
-                    <div className="text-sm text-yellow-200">Dubai</div>
+                    <div className="text-sm text-yellow-200">Started his Own Startup Business in Dubai (Brazilian in Dubai)</div>
                   </div>
                 </div>
 
-                {/* O.K - Netherlands */}
+                {/* O.K - Landed a Managing Director Dream Job */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;Isabelita supported me on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun.&quot;
+                    &quot;Isabelita supported me in the last couple of months since January on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun. I strongly recommend Isabelita if you need an experienced sparring partner.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">O.K.</div>
-                    <div className="text-sm text-yellow-200">Netherlands</div>
+                    <div className="text-sm text-yellow-200">Landed a Managing Director Dream Job (Dutch in The Netherlands)</div>
                   </div>
                 </div>
 
-                {/* S.M - Germany */}
+                {/* S.M - Landed a Global Director Role */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. Her extensive professional network and remarkable ability to connect people make her an invaluable asset.&quot;
+                    &quot;I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. As a career strategist, she brings a wealth of expertise to executives navigating career transitions. Her extensive professional network and remarkable ability to connect people make her an invaluable asset.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">S.M.</div>
-                    <div className="text-sm text-yellow-200">Germany</div>
+                    <div className="text-sm text-yellow-200">Landed a Global Director Role in Germany (Iranian in Germany)</div>
                   </div>
                 </div>
 
-                {/* P.C - United States */}
+                {/* P.C - Started his Own Startup Business */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;I have learned so much from Isabelita! She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit.&quot;
+                    &quot;I have learned so much from Isabelita! She guided me on how to redefine myself, presenting my skills and achievements in new and better ways. She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">P.C.</div>
-                    <div className="text-sm text-yellow-200">United States</div>
+                    <div className="text-sm text-yellow-200">Started his Own Startup Business in The United States (Argentinian/American in The US)</div>
+                  </div>
+                </div>
+
+                {/* B.P - Landed a CEO Dream Job */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;I had the privilege of working with Isabelita as my executive coach over the past year. She provided objective insights and consistently challenged my status quo with thought-provoking questions that resonated deeply with my experiences. Isabelita was instrumental in guiding me to develop effective networking strategies.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">B.P.</div>
+                    <div className="text-sm text-yellow-200">Landed a CEO Dream Job in Dubai (Indian in Dubai)</div>
+                  </div>
+                </div>
+
+                {/* M.D.R - Landed a SVP Supply Job */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;I had the pleasure to work with Isabelita while I was transitioning careers in order to land an executive job in New York. She is a force of nature: always available, upbeat, reliable and on point. She is a font of knowledge on job hunting strategies, LinkedIn profile optimization, and effective communication during interviews.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">M.D.R.</div>
+                    <div className="text-sm text-yellow-200">Landed a SVP Supply Job (Italian who moved from Italy to the US/New York)</div>
+                  </div>
+                </div>
+
+                {/* A.M.H - Landed a Director Job */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;Isabelita is a transparent and thoughtful to others. I came to her when I was in a devastated mood. With her knowledge and experience she managed to flip that mood and helped me in negotiating my latest job successfully. I recommend her for anyone who is having difficulty in landing the proper job.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">A.M.H.</div>
+                    <div className="text-sm text-yellow-200">Landed a Director Job in the Government Sector (Saudi Arabian living in Bahrain who moved back to Saudi Arabia)</div>
+                  </div>
+                </div>
+
+                {/* R.A.K - Landed a CMO role */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;Isabelita is a powerhouse career advisor. She is sharp, knowledgeable, resourceful, and experienced in offering solutions and an effective action plan that yields results. Her expertise in using tools like LinkedIn and other online portals as well as navigating challenging situations like networking and negotiations was instrumental.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">R.A.K.</div>
+                    <div className="text-sm text-yellow-200">Landed a CMO role in a Non Profit Organization in Dubai (American in Dubai)</div>
+                  </div>
+                </div>
+
+                {/* M.A - Started his Own Startup Business */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;I was extremely fortunate to have had Isabelita as my executive career Advisor and Coach. Not only did she Mentor me but she was able to bring out the best in me. Within a short period of time I was able to see my plans, which Isabelita had set for me, reach true fruition. Her ability to guide people effectively is a testament to her cultural knowledge.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">M.A.</div>
+                    <div className="text-sm text-yellow-200">Started his Own Startup Business in Kuwait</div>
                   </div>
                 </div>
               </div>
 
               {/* Duplicate set for infinite scroll */}
               <div className="flex gap-8 flex-shrink-0">
-                {/* C.M - Dubai to Dublin */}
+                {/* C.M - Landed a new VP Job */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;I had the pleasure of working with Isabelita through the TBG program and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing.&quot;
+                    &quot;I had the pleasure of working with Isabelita and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing. She provided clear strategies, practical advice and also helped me approach my career with confidence and determination.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">C.M.</div>
-                    <div className="text-sm text-yellow-200">Dubai to Dublin Transition</div>
+                    <div className="text-sm text-yellow-200">Landed a new VP Job (Kenyan who moved from Dubai to Dublin)</div>
                   </div>
                 </div>
 
-                {/* L.Q - France to Argentina */}
+                {/* L.Q - Landed a CEO Dream Job */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. She helped me discover what I really wanted in my career journey.&quot;
+                    &quot;For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. From our very first session to finding my exciting new role, she was there every step of the way. She didn&apos;t just help me find a job - she helped me discover what I really wanted in my career journey.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">L.Q.</div>
-                    <div className="text-sm text-yellow-200">France to Argentina Transition</div>
+                    <div className="text-sm text-yellow-200">Landed a CEO Dream Job (Brazilian who moved from France to Argentina)</div>
                   </div>
                 </div>
 
-                {/* H.R - Dubai */}
+                {/* H.R - Started his Own Startup Business */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move.&quot;
+                    &quot;I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move. In addition to the technical skills she uses to guide her mentees, her relationship network is impressive and makes all the difference.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">H.R.</div>
-                    <div className="text-sm text-yellow-200">Dubai</div>
+                    <div className="text-sm text-yellow-200">Started his Own Startup Business in Dubai (Brazilian in Dubai)</div>
                   </div>
                 </div>
 
-                {/* O.K - Netherlands */}
+                {/* O.K - Landed a Managing Director Dream Job */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;Isabelita supported me on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun.&quot;
+                    &quot;Isabelita supported me in the last couple of months since January on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun. I strongly recommend Isabelita if you need an experienced sparring partner.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">O.K.</div>
-                    <div className="text-sm text-yellow-200">Netherlands</div>
+                    <div className="text-sm text-yellow-200">Landed a Managing Director Dream Job (Dutch in The Netherlands)</div>
                   </div>
                 </div>
 
-                {/* S.M - Germany */}
+                {/* S.M - Landed a Global Director Role */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. Her extensive professional network and remarkable ability to connect people make her an invaluable asset.&quot;
+                    &quot;I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. As a career strategist, she brings a wealth of expertise to executives navigating career transitions. Her extensive professional network and remarkable ability to connect people make her an invaluable asset.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">S.M.</div>
-                    <div className="text-sm text-yellow-200">Germany</div>
+                    <div className="text-sm text-yellow-200">Landed a Global Director Role in Germany (Iranian in Germany)</div>
                   </div>
                 </div>
 
-                {/* P.C - United States */}
+                {/* P.C - Started his Own Startup Business */}
                 <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
                   <div className="flex mb-4">
                     <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                   </div>
                   <p className="text-gray-300 mb-6 italic">
-                    &quot;I have learned so much from Isabelita! She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit.&quot;
+                    &quot;I have learned so much from Isabelita! She guided me on how to redefine myself, presenting my skills and achievements in new and better ways. She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit.&quot;
                   </p>
                   <div className="text-center">
                     <div className="font-semibold text-white">P.C.</div>
-                    <div className="text-sm text-yellow-200">United States</div>
+                    <div className="text-sm text-yellow-200">Started his Own Startup Business in The United States (Argentinian/American in The US)</div>
+                  </div>
+                </div>
+
+                {/* B.P - Landed a CEO Dream Job */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;I had the privilege of working with Isabelita as my executive coach over the past year. She provided objective insights and consistently challenged my status quo with thought-provoking questions that resonated deeply with my experiences. Isabelita was instrumental in guiding me to develop effective networking strategies.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">B.P.</div>
+                    <div className="text-sm text-yellow-200">Landed a CEO Dream Job in Dubai (Indian in Dubai)</div>
+                  </div>
+                </div>
+
+                {/* M.D.R - Landed a SVP Supply Job */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;I had the pleasure to work with Isabelita while I was transitioning careers in order to land an executive job in New York. She is a force of nature: always available, upbeat, reliable and on point. She is a font of knowledge on job hunting strategies, LinkedIn profile optimization, and effective communication during interviews.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">M.D.R.</div>
+                    <div className="text-sm text-yellow-200">Landed a SVP Supply Job (Italian who moved from Italy to the US/New York)</div>
+                  </div>
+                </div>
+
+                {/* A.M.H - Landed a Director Job */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;Isabelita is a transparent and thoughtful to others. I came to her when I was in a devastated mood. With her knowledge and experience she managed to flip that mood and helped me in negotiating my latest job successfully. I recommend her for anyone who is having difficulty in landing the proper job.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">A.M.H.</div>
+                    <div className="text-sm text-yellow-200">Landed a Director Job in the Government Sector (Saudi Arabian living in Bahrain who moved back to Saudi Arabia)</div>
+                  </div>
+                </div>
+
+                {/* R.A.K - Landed a CMO role */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;Isabelita is a powerhouse career advisor. She is sharp, knowledgeable, resourceful, and experienced in offering solutions and an effective action plan that yields results. Her expertise in using tools like LinkedIn and other online portals as well as navigating challenging situations like networking and negotiations was instrumental.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">R.A.K.</div>
+                    <div className="text-sm text-yellow-200">Landed a CMO role in a Non Profit Organization in Dubai (American in Dubai)</div>
+                  </div>
+                </div>
+
+                {/* M.A - Started his Own Startup Business */}
+                <div className="glass-effect rounded-2xl p-8 hover-lift flex-shrink-0 w-80">
+                  <div className="flex mb-4">
+                    <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">
+                    &quot;I was extremely fortunate to have had Isabelita as my executive career Advisor and Coach. Not only did she Mentor me but she was able to bring out the best in me. Within a short period of time I was able to see my plans, which Isabelita had set for me, reach true fruition. Her ability to guide people effectively is a testament to her cultural knowledge.&quot;
+                  </p>
+                  <div className="text-center">
+                    <div className="font-semibold text-white">M.A.</div>
+                    <div className="text-sm text-yellow-200">Started his Own Startup Business in Kuwait</div>
                   </div>
                 </div>
               </div>
