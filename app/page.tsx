@@ -1075,7 +1075,7 @@ opportunities.
                   <svg className="w-5 h-5 text-yellow-200 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-sm font-semibold text-white">One 60-minute strategy session + comprehensive written report delivered within 10-15 business days</span>
+                  <span className="text-sm font-semibold text-white">✓ One 60-minute strategy session + comprehensive written report delivered within 10-15 business days</span>
                 </div>
               </div>
 
@@ -1161,18 +1161,18 @@ opportunities.
             >
               <div className="text-center mb-8">
                 <h3 className="font-luxury text-3xl font-bold text-white mb-4">
-                  Strategic Job Search Intelligence
+                  Customized Executive Career Roadmap Light
                 </h3>
                 <p className="text-lg text-gray-300 mb-6">
-                  For Senior Leaders with Job Landing Recommendations Actions
+                  Strategic Job Search Intelligence for Senior Leaders with Job Landing Recommendations Actions
                 </p>
                 <div className="mb-6">
                   <div className="inline-flex items-center space-x-4">
                     <span className="font-luxury text-5xl font-bold gold-gradient">
-                      EUR 150
+                      EUR 150/ Month - One Time
                     </span>
                     <div className="text-left">
-                      <div className="text-yellow-200 font-semibold">One Time</div>
+                      <div className="text-red-400 font-bold">NON-REFUNDABLE</div>
                       <div className="text-sm text-gray-400">Single Payment</div>
                     </div>
                   </div>
@@ -1184,7 +1184,7 @@ opportunities.
                   <svg className="w-5 h-5 text-yellow-200 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-sm font-semibold text-white">One 60-minute strategy session + comprehensive written report delivered within 10-15 business days</span>
+                  <span className="text-sm font-semibold text-white">✓ One 60-minute strategy session + comprehensive written report delivered within 10-15 business days</span>
                 </div>
               </div>
 
@@ -1197,8 +1197,8 @@ opportunities.
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <span className="font-semibold text-white">CV & LinkedIn Feedback</span>
-                        <p className="text-gray-400 text-sm mt-1">Professional analysis and optimization recommendations for maximum executive appeal and ATS compatibility.</p>
+                        <span className="font-semibold text-white">📄 CV &amp; LinkedIn Feedback</span>
+                        <p className="text-gray-400 text-sm mt-1">Professional analysis and optimization recommendations for your CV and LinkedIn profile to maximize executive appeal and ATS compatibility.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -1206,8 +1206,8 @@ opportunities.
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <span className="font-semibold text-white">Strategic Roadmap</span>
-                        <p className="text-gray-400 text-sm mt-1">Recommendations for your next steps with a comprehensive customized report, including market trends.</p>
+                        <span className="font-semibold text-white">🗺️ Strategic Roadmap</span>
+                        <p className="text-gray-400 text-sm mt-1">Recommendations for your next steps with a comprehensive customized (for your case specifically) report, including market trends.</p>
                       </div>
                     </div>
                   </div>
