@@ -1274,123 +1274,181 @@ export default function Home() {
               </span>
             </div>
             <h2 className="font-luxury text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-white">Your</span>
-              <span className="gold-gradient"> Elite Transformation Journey</span>
+              <span className="text-white">Secure your next role by following our</span>
+              <span className="gold-gradient"> successful formula</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Our comprehensive executive career acceleration program takes you from initial branding through successful job placement and onboarding. With our proven methodology, you&apos;ll access both published and hidden job markets while building an executive brand that commands attention.
+              Tested and proven by niche senior professionals over the last decade.
             </p>
           </div>
           
-          {/* Program Phases - 2 cards */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {/* Program Phases */}
+          <div className="space-y-12">
             
             {/* Phase 1 */}
             <div className="program-card rounded-2xl p-8 hover-lift">
               <h3 className="font-luxury text-2xl font-bold mb-4 text-white">
-                Foundation &amp; Assessment
+                Phase 1: Foundation: Executive Branding Trinity Foundation ™
               </h3>
-              <p className="text-gray-300 mb-6">
-                Establish your executive baseline and create a powerful personal brand architecture that resonates with decision-makers.
-              </p>
-              <ul className="space-y-3 text-gray-400 mb-8">
+              <p className="text-yellow-200 font-semibold mb-6">Full Execution Done for You</p>
+              <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
-                  <span className="text-yellow-200 mr-2">•</span>
-                  <span>Executive presence audit &amp; gap analysis</span>
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Professional CV enhancement and optimization</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-yellow-200 mr-2">•</span>
-                  <span>Leadership style assessment</span>
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>LinkedIn profile transformation for executive positioning</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-yellow-200 mr-2">•</span>
-                  <span>Personal brand architecture</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-200 mr-2">•</span>
-                  <span>Strategic goal setting framework</span>
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Executive bio development for maximum impact</span>
                 </li>
               </ul>
-
-              {/* Signature Intensive Program Details */}
-              <div className="border-t border-yellow-200/20 pt-6">
-                <h4 className="font-luxury text-xl font-bold text-yellow-200 mb-3">
-                  Signature Intensive 3 Months Program
-                </h4>
-                <p className="text-white font-semibold mb-2">3 Months Commitment</p>
-                <p className="text-2xl font-bold gold-gradient mb-4">EUR 2,083 Monthly Subscription</p>
-                
-                <div className="space-y-4 text-sm">
-                  <div>
-                    <h5 className="font-semibold text-white mb-2">T&C:</h5>
-                    <p className="text-gray-300">Up to 2 weekly Sessions (1h)</p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold text-white mb-2">Payment Structure:</h5>
-                    <ul className="text-gray-300 space-y-1">
-                      <li>• Month 1 - Paid during enrollment before program starts</li>
-                      <li>• Month 2 - 30 days after enrollment</li>
-                      <li>• Month 3 - 30 days after Month 2</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold text-white mb-2">After 3 months if continuation is needed:</h5>
-                    <p className="text-gray-300 mb-2">Free continuous support for another 3 months:</p>
-                    <p className="text-gray-300">Once weekly Sessions (60 min each) with a success fee of 50% of first month&apos;s net salary due upon signing the job offer.</p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Phase 2 */}
             <div className="program-card rounded-2xl p-8 hover-lift">
               <h3 className="font-luxury text-2xl font-bold mb-4 text-white">
-                Strategy &amp; Implementation
+                Phase 2: Published Market - &apos;The Shark&apos; Move&apos; Job Search Strategy ™
               </h3>
-              <p className="text-gray-300 mb-6">
-                Deploy advanced executive strategies and master the art of high-level communication and negotiation.
-              </p>
-              <ul className="space-y-3 text-gray-400 mb-8">
+              <p className="text-yellow-200 font-semibold mb-6">Strategy and Execution Support</p>
+              <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
-                  <span className="text-yellow-200 mr-2">•</span>
-                  <span>C-suite communication mastery</span>
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>360° Published Market Approach - Strategic job search and application methodology with psychology of influence to nail interviews with hiring managers and decision makers</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-yellow-200 mr-2">•</span>
-                  <span>Strategic decision-making frameworks</span>
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>CV Customization for each job application - up to 5 versions</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-yellow-200 mr-2">•</span>
-                  <span>High-stakes negotiation tactics</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-200 mr-2">•</span>
-                  <span>Network expansion strategies</span>
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Executive Brand Positioning - Practical and Live application with real-time feedback for diverse cultural markets</span>
                 </li>
               </ul>
+            </div>
 
-              {/* Focused Package Details */}
-              <div className="border-t border-yellow-200/20 pt-6">
-                <h4 className="font-luxury text-xl font-bold text-yellow-200 mb-3">
-                  Focused Package
-                </h4>
-                <p className="text-white font-semibold mb-2">1 Month Commitment</p>
-                <p className="text-white font-semibold mb-2">Pay as You Go</p>
-                <p className="text-2xl font-bold gold-gradient mb-4">EUR 2,500/ Month - One Month</p>
-                
-                <div className="space-y-4 text-sm">
-                  <div>
-                    <h5 className="font-semibold text-white mb-2">T&C:</h5>
-                    <p className="text-gray-300">Up to 2 weekly Sessions (1h)</p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold text-white mb-2">Payment Structure:</h5>
-                    <p className="text-gray-300">Paid during enrollment before program starts</p>
-                  </div>
-                </div>
+            {/* Phase 3 */}
+            <div className="program-card rounded-2xl p-8 hover-lift">
+              <h3 className="font-luxury text-2xl font-bold mb-4 text-white">
+                Phase 3: Elite Headhunters Outreach: Become a Magnet for Headhunters &amp; Recruiters
+              </h3>
+              <p className="text-yellow-200 font-semibold mb-6">Strategy and Execution Support</p>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Mapping - Customized List of Executive Headhunters in real-time</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Winner Mindset - You&apos;ll learn all the secrets of headhunters&apos;s game, gaining faster rapport and passing interviews</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Mock Interview Preparation with headhunters and recruiters - unlimited</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Phase 4 */}
+            <div className="program-card rounded-2xl p-8 hover-lift">
+              <h3 className="font-luxury text-2xl font-bold mb-4 text-white">
+                Phase 4: Hidden Job Market Mastery - Unpublished Executive Job Market
+              </h3>
+              <p className="text-yellow-200 font-semibold mb-6">Strategy and Execution Support</p>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Unpublished Market Access - Exclusive mindset and methodology to access the hidden Jobs</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>LinkedIn Networking Mastery - Gain Traction and re-active your LinkedIn network with a successful mindset other than a &quot;needy&quot; mindset. Transform virtual talk into actionable next steps</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Strategic Relationship Building - Access new connections and gain direct introductions to who matters (decision makers and executives of influence)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Phase 5 */}
+            <div className="program-card rounded-2xl p-8 hover-lift">
+              <h3 className="font-luxury text-2xl font-bold mb-4 text-white">
+                Phase 5: Conversion &amp; Opportunity Creation - Match Making
+              </h3>
+              <p className="text-yellow-200 font-semibold mb-6">Strategy and Execution Support</p>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>&quot;Funneling &amp; Squeezing the Lemon&quot; Technique ™ - Converting casual conversations into actionable opportunities</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Advanced Communication Mastery - Proprietary techniques for creating opportunities where none existed</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Referral &amp; Introduction to Executive Power&apos;s Networking - Direct Access and Introductions to Executive Power&apos;s high caliber network</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Throughout the Program */}
+            <div className="program-card rounded-2xl p-8 hover-lift border-2 border-yellow-200/30">
+              <h3 className="font-luxury text-2xl font-bold mb-4 text-yellow-200">
+                Throughout the Program: Interview Excellence &amp; Negotiation Mastery
+              </h3>
+              <p className="text-white font-semibold mb-6">Customized Job Interviews for Each Job - Mock Interviews - Unlimited (24 hours notice)</p>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Interview Preparation Mastery - Comprehensive preparation strategies</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Offer Negotiation - Maximize your compensation package</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Success Integration */}
+            <div className="program-card rounded-2xl p-8 hover-lift bg-gradient-to-r from-yellow-200/10 to-yellow-200/5">
+              <h3 className="font-luxury text-2xl font-bold mb-4 text-yellow-200">
+                Success Integration &amp; Career Acceleration - Sold Separately
+              </h3>
+              <p className="text-gray-300 mb-6">Strategic Onboarding - First 30/60/90 days</p>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Foundation Building - Road Map for rapid career ladder progression</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-yellow-200 mr-3">✓</span>
+                  <span>Organizational Success Strategies - Fast-track advancement within your new role</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Application Form CTA */}
+            <div className="text-center mt-16">
+              <div className="glass-effect rounded-2xl p-8 max-w-4xl mx-auto">
+                <h3 className="font-luxury text-2xl font-bold mb-4 text-white">
+                  Exclusive Program - Limited Availability
+                </h3>
+                <p className="text-gray-300 mb-6">
+                  Only Available for specific profiles, fill up this form now and if you are approved someone of our team will be in touch. If you don&apos;t hear back within 7 days we regret that you didn&apos;t qualify.
+                </p>
+                <motion.a 
+                  href="/checkout/form?package=comprehensive&price=500" 
+                  className="luxury-button text-black px-12 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10"
+                  whileHover={{ scale: 1.05, y: -3 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                >
+                  Apply Now • Exclusive Access
+                </motion.a>
               </div>
             </div>
           </div>
@@ -1494,4 +1552,5 @@ export default function Home() {
       </footer>
     </>
   );
+}
 }
