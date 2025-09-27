@@ -416,7 +416,7 @@ export default function Home() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                 Elevating Your<br />Job Search Game
+                 Elevate Your<br />Job Search Game
                 </motion.span>
                 <motion.span 
                   className="text-white/90 block text-4xl md:text-5xl lg:text-6xl font-medium mb-2"
@@ -464,9 +464,9 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.9 }}
               >
-                Experience a bespoke executive transformation with
-                <span className="text-yellow-200 font-semibold"> Isabellita</span>, 
-                distinguished CEO and architect of Fortune 500 leadership excellence.
+                Navigate the Unpublished Executive <span className="text-yellow-200 font-semibold">Job Market</span> with Isabelita Castilho,
+                istinguished Executive <span className="text-yellow-200 font-semibold">Career Transition</span> Mentor and a <span className="text-yellow-200 font-semibold">Forbes Member</span>
+                Council, Award Winner of Best Career Coach of 2025.
               </motion.p>
 
               <motion.div 
@@ -482,7 +482,7 @@ export default function Home() {
                   whileTap={{ scale: 0.98 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  Reserve Your Executive Session • $150
+                  Reserve Your Executive Session
                 </motion.a>
                 <motion.a
                   href="#testimonials"
@@ -609,25 +609,6 @@ export default function Home() {
                 </motion.div>
                 
                 {/* Animated Floating Badges */}
-                <motion.div 
-                  className="absolute -right-4 top-20 glass-effect px-4 py-2 rounded-full"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ 
-                    opacity: 1, 
-                    x: 0,
-                    y: [0, -10, 0]
-                  }}
-                  transition={{ 
-                    opacity: { duration: 0.6, delay: 1.5 },
-                    x: { duration: 0.6, delay: 1.5 },
-                    y: { duration: 4, repeat: Infinity, ease: "easeInOut" }
-                  }}
-                  whileHover={{ scale: 1.05, y: -5 }}
-                >
-                  <span className="text-sm font-semibold text-yellow-200">
-                    Fortune 500 Advisor
-                  </span>
-                </motion.div>
                 <motion.div
                   className="absolute -left-4 top-32 glass-effect px-4 py-2 rounded-full"
                   initial={{ opacity: 0, x: -20 }}
@@ -644,7 +625,7 @@ export default function Home() {
                   whileHover={{ scale: 1.05, y: 5 }}
                 >
                   <span className="text-sm font-semibold text-yellow-200">
-                    15+ Years Experience
+                    10+ Years Experience
                   </span>
                 </motion.div>
               </div>
