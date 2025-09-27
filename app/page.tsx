@@ -656,10 +656,12 @@ export default function Home() {
               </span>
             </div>
             <h2 className="font-luxury text-4xl md:text-6xl font-bold mb-6">
-              <span className="gold-gradient">A Little About Us</span>
+              <span className="gold-gradient">A Little About Her</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Discover why Fortune 500 executives and industry leaders trust Isabelita Castilho to accelerate their career transformations and unlock unprecedented opportunities.
+            Discover why Fortune 500 executives and industry leaders trust Isabelita
+Castilho to accelerate their career transformations and unlock unprecedented
+opportunities.
             </p>
           </motion.div>
 
@@ -673,7 +675,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <div className="text-center mb-6">
-                <h3 className="font-luxury text-2xl font-bold text-white mb-4">Expert Career Transition Advisor</h3>
+                <h3 className="font-luxury text-2xl font-bold text-white mb-4">Career Transition Advisor</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
                 Isabelita Castilho is a distinguished executive career transition advisor with over a decade of expertise in guiding senior leaders through successful career transitions. She helps professionals navigate today&apos;s competitive job market with unshakeable confidence and strategic precision.
@@ -692,7 +694,7 @@ export default function Home() {
                 <h3 className="font-luxury text-2xl font-bold text-white mb-4">Award-Winning Recognition</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                A prestigious Forbes Coaches Council Member and winner of the coveted Best Career Coach Award 2025, Isabelita&apos;s exceptional accolades underscore her unparalleled leadership and transformative impact in the executive coaching industry.
+                A prestigious Forbes Coaches Council Member, Winner of the Best Career Coach Award 2025, Isabelita&apos;s exceptional accolades underscore her unparalleled leadership and transformative impact in the executive coaching industry.
               </p>
             </motion.div>
 
@@ -708,7 +710,7 @@ export default function Home() {
                 <h3 className="font-luxury text-2xl font-bold text-white mb-4">Global Impact & Proven Results</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                Isabelita has empowered executives from 40+ countries and 18+ nationalities, creating a global network of success. Her exceptional ability to deliver transformative results is showcased through 86 published testimonials on LinkedIn, reflecting her unmatched track record of executive excellence.
+                Isabelita has empowered executives from 40+ countries and 18+ nationalities, creating a global network of success. Her exceptional ability to deliver transformative results is showcased through 85+ published testimonials on LinkedIn, reflecting her unmatched track record of mentorship excellence.
               </p>
             </motion.div>
 
@@ -724,7 +726,7 @@ export default function Home() {
                 <h3 className="font-luxury text-2xl font-bold text-white mb-4">Comprehensive & Innovative Approach</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                Her cutting-edge strategy covers personal branding, strategic networking, interview mastery, and exclusive market insights. Isabelita combines insider knowledge of executive recruitment with innovative methodologies to help leaders secure their next milestone role with unprecedented speed and precision.
+                Her cutting-edge strategy covers personal branding, strategic networking conversations, interview mastery, and exclusive market and executive headhunters&apos; insights. Isabelita combines insider knowledge of executive recruitment with innovative methodologies to help leaders secure their next milestone role with unprecedented speed and precision.
               </p>
             </motion.div>
 
@@ -740,7 +742,7 @@ export default function Home() {
                 <h3 className="font-luxury text-2xl font-bold text-white mb-4">Published Author & Speaker</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                As a published author, international speaker, and host of the acclaimed &quot;Happy Monday Executives&quot; podcast and YouTube channel, Isabelita consistently shares game-changing insights that make a lasting impact on executive careers worldwide, reaching thousands of leaders monthly.
+                As a published author, international speaker, and host of the acclaimed &quot;Happy Monday Executives&quot; podcast and YouTube channel with thousands of followers, Isabelita consistently shares game-changing insights that make a lasting impact on executive careers worldwide, reaching thousands of leaders monthly. She is from Brazil and Lives in Dubai since 2011.
               </p>
             </motion.div>
           </div>
