@@ -1552,11 +1552,17 @@ opportunities.
             <div className="text-center mt-16">
               <div className="glass-effect rounded-2xl p-8 max-w-4xl mx-auto">
                 <h3 className="font-luxury text-2xl font-bold mb-4 text-white">
-                  Exclusive Program - Limited Availability
+                  Your Elite Premium Transformation Journey
                 </h3>
                 <p className="text-gray-300 mb-6">
-                  Only Available for specific profiles, fill up this form now and if you are approved someone of our team will be in touch. If you don&apos;t hear back within 7 days we regret that you didn&apos;t qualify.
+                  Our comprehensive executive career acceleration program takes you from initial branding through successful job placement and onboarding. With our proven methodology, you&apos;ll access both published and hidden job markets while building an executive brand that commands attention.
                 </p>
+                <div className="text-left mb-6 max-w-2xl mx-auto">
+                  <h4 className="font-semibold text-white mb-2">Foundation &amp; Assessment</h4>
+                  <p className="text-gray-300 text-sm">
+                    Establish your executive presence and create a powerful personal brand architecture that resonates with decision-makers.
+                  </p>
+                </div>
                 <motion.a 
                   href="/checkout/form?package=comprehensive&price=500" 
                   className="luxury-button text-black px-12 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10"
