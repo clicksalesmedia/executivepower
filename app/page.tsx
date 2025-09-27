@@ -822,7 +822,7 @@ opportunities.
               <span className="gold-gradient">Success Stories That Inspire</span>
             </h2>
             <p className="text-xl text-gray-400">
-              From our exclusive alumni network
+              From our exclusive Global Executive Network
             </p>
           </div>
           
@@ -1032,7 +1032,8 @@ opportunities.
               <span className="gold-gradient">Choose Your Success Path</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Invest in your executive future with our proven career acceleration programs designed for senior leaders ready to unlock their next milestone role.
+            Invest in your executive future with our proven career change programs
+            designed for senior leaders ready to unlock their next milestone role.
             </p>
           </motion.div>
 
@@ -1054,15 +1055,15 @@ opportunities.
                   Customized Comprehensive Executive Career Roadmap
                 </h3>
                 <p className="text-lg text-gray-300 mb-6">
-                  Strategic Job Search Intelligence with Job Landing Plan
+                  Strategic Job Search Intelligence for Senior Leaders with Job Landing Plan
                 </p>
                 <div className="mb-6">
                   <div className="inline-flex items-center space-x-4">
                     <span className="font-luxury text-5xl font-bold gold-gradient">
-                      EUR 500
+                      EUR 500/ Month - One Time
                     </span>
                     <div className="text-left">
-                      <div className="text-yellow-200 font-semibold">One Time</div>
+                      <div className="text-red-400 font-bold">NON-REFUNDABLE</div>
                       <div className="text-sm text-gray-400">Complete Package</div>
                     </div>
                   </div>
@@ -1087,7 +1088,7 @@ opportunities.
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <span className="font-semibold text-white">10 Target Companies</span>
+                        <span className="font-semibold text-white">🏢 10 Target Companies</span>
                         <p className="text-gray-400 text-sm mt-1">Carefully selected organizations aligned with your experience, salary expectations, and career goals. Each company profiled with key decision makers and current opportunities.</p>
                       </div>
                     </div>
@@ -1096,7 +1097,7 @@ opportunities.
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <span className="font-semibold text-white">30 Key Headhunters</span>
+                        <span className="font-semibold text-white">🎯 30 Key Headhunters</span>
                         <p className="text-gray-400 text-sm mt-1">Curated list of executive recruiters specializing in your industry and function, with contact details and relationship-building strategies.</p>
                       </div>
                     </div>
