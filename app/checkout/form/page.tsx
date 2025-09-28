@@ -425,7 +425,7 @@ function CheckoutFormContent() {
                     value={formData.currentEmployer}
                     onChange={handleInputChange}
                     className={`w-full px-4 py-3 rounded-lg form-input text-white placeholder-gray-400 ${errors.currentEmployer ? 'border-red-500' : ''}`}
-                    placeholder="Enter your current or last employer"
+                    placeholder="Enter your current or last employer's name"
                   />
                   {errors.currentEmployer && <p className="text-red-400 text-sm mt-1">{errors.currentEmployer}</p>}
                 </div>

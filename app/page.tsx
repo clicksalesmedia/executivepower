@@ -400,7 +400,7 @@ export default function Home() {
                   transition={{ duration: 2.5, repeat: Infinity }}
                 />
                 <span className="text-sm font-medium text-yellow-200 tracking-wide">
-                  Exclusive Access • Only 3 Executive Seats Available
+                  Exclusive Access • Limited Executive Seats Available
                 </span>
               </motion.div>
 
@@ -465,7 +465,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.9 }}
               >
                 Navigate the Unpublished Executive <span className="text-yellow-200 font-semibold">Job Market</span> with Isabelita Castilho,
-                istinguished Executive <span className="text-yellow-200 font-semibold">Career Transition</span> Mentor and a <span className="text-yellow-200 font-semibold">Forbes Member</span>
+                distinguished Executive <span className="text-yellow-200 font-semibold">Career Transition</span> Mentor and a <span className="text-yellow-200 font-semibold">Forbes Member</span>
                 Council, Award Winner of Best Career Coach of 2025.
               </motion.p>
 
@@ -482,7 +482,7 @@ export default function Home() {
                   whileTap={{ scale: 0.98 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  Reserve Your Executive Session
+                 Start Now
                 </motion.a>
                 <motion.a
                   href="#testimonials"
@@ -772,9 +772,6 @@ opportunities.
             <h2 className="font-luxury text-4xl md:text-5xl font-bold mb-4">
               <span className="gold-gradient">Experience The Transformation</span>
             </h2>
-            <p className="text-xl text-gray-400">
-            Watch how executives revolutionized their careers
-            </p>
           </div>
           <div className="luxury-border rounded-3xl p-1">
             <div className="bg-[#1B1C1D] rounded-3xl p-8">
@@ -1570,7 +1567,7 @@ opportunities.
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  Apply Now • Exclusive Access
+                  APPLY NOW - EXCLUSIVE ACCESS
                 </motion.a>
               </div>
             </div>
@@ -1625,7 +1622,7 @@ opportunities.
               <h4 className="font-semibold text-yellow-200 mb-4">Connect</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/isabelitacastilho/"
                   className="w-10 h-10 glass-effect rounded-full flex items-center justify-center hover:bg-white/10 transition"
                 >
                   <span className="text-yellow-200">in</span>
@@ -1635,21 +1632,11 @@ opportunities.
           </div>
           <div className="border-t border-yellow-600/10 pt-8 text-center text-sm text-gray-500">
             <p>
-              © 2025 Executive Power Company. All rights reserved. | Crafted with
-              excellence for exceptional leaders.
+              © 2025 Executive Power Company. All rights reserved. | Unlocking Your Executive Power! Your Transition, My Expertise.
             </p>
           </div>
         </div>
       </footer>
-      
-      {/* Footer Image */}
-      <div className="w-full">
-        <img 
-          src="/footerexecutive.jpg" 
-          alt="Executive Power Footer" 
-          className="w-full h-auto"
-        />
-      </div>
     </>
   );
 }
