@@ -27,6 +27,10 @@ export default function Home() {
             overflow-x: hidden;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         .font-luxury {
             font-family: 'Playfair Display', serif;
         }
@@ -222,7 +226,7 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a
-                href="#program"
+                href="#pricing"
                 className="text-gray-300 hover:text-yellow-200 transition"
               >
                 Elite Premium
@@ -239,9 +243,9 @@ export default function Home() {
               >
                 Success Stories
               </a>
-              <Link href="/checkout" className="luxury-button text-black px-8 py-3 rounded-full font-semibold inline-block text-center relative z-10">
+              <a href="#pricing" className="luxury-button text-black px-8 py-3 rounded-full font-semibold inline-block text-center relative z-10">
                 Reserve Your Seat
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -635,7 +639,7 @@ export default function Home() {
       </section>
 
       {/* A Little About Us Section */}
-      <section className="py-20 relative overflow-hidden">
+      <section id="about" className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 parallax-bg"></div>
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
@@ -807,9 +811,6 @@ opportunities.
           </motion.div>
         </div>
       </section>
-
-
-
 
       {/* Testimonials Luxury Section */}
       <section id="testimonials" className="py-20 px-6">
@@ -1145,7 +1146,7 @@ opportunities.
       </section>
 
       {/* Luxury Pricing Plans Section */}
-      <section className="py-20 px-6 bg-gradient-to-b from-black/20 to-transparent relative overflow-hidden">
+      <section id="pricing" className="py-20 px-6 bg-gradient-to-b from-black/20 to-transparent relative overflow-hidden">
         <div className="absolute inset-0 parallax-bg"></div>
         <div className="container mx-auto max-w-7xl relative z-10">
           <motion.div
@@ -1475,7 +1476,7 @@ opportunities.
                 <li className="flex items-start">
                   <span className="text-yellow-200 mr-3">✓</span>
                   <span>Unpublished Market Access - Exclusive mindset and methodology to access the hidden Jobs</span>
-                </li>
+              </li>
                 <li className="flex items-start">
                   <span className="text-yellow-200 mr-3">✓</span>
                   <span>LinkedIn Networking Mastery - Gain Traction and re-active your LinkedIn network with a successful mindset other than a &quot;needy&quot; mindset. Transform virtual talk into actionable next steps</span>
