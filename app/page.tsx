@@ -454,7 +454,7 @@ export default function Home() {
                     }}
                   />
                   <img
-                    src="/isa.png"
+                    src="/isaforbesmobile.png"
                     alt="Isabellita - CEO of Executive Power"
                     className="w-full h-auto scale-[1.5] mx-auto relative z-10 max-w-sm"
                     style={{ transformOrigin: 'bottom center' }}
@@ -536,17 +536,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.5 }}
               >
-                <motion.div 
-                  className="glass-effect p-3 rounded-xl border-2 border-yellow-200/30 hover:border-yellow-200/50 transition-all duration-300"
-                  whileHover={{ scale: 1.1, y: -3 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  <img 
-                    src="/FCC-Badge-Square-Black copy.avif" 
-                    alt="Forbes Coaches Council Official Member" 
-                    className="h-12 w-12 object-contain"
-                  />
-                </motion.div>
+               
               </motion.div>
             </motion.div>
 
@@ -605,7 +595,7 @@ export default function Home() {
                   transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
                 >
                   <img
-                    src="/isa.png"
+                    src="/isaforbess.png"
                     alt="Isabellita - CEO of Executive Power"
                     className="w-full h-auto scale-[1.2] sm:scale-[1.5] lg:scale-[2] mx-auto relative z-10 max-w-xs sm:max-w-sm lg:max-w-none"
                     style={{ transformOrigin: 'bottom center' }}
