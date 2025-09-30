@@ -85,12 +85,14 @@ model Lead {
   status               LeadStatus @default(PENDING)
   paymentIntentId      String?
   notes                String?
+  isElitePremium       Boolean  @default(false)
   createdAt            DateTime @default(now())
   updatedAt            DateTime @updatedAt
 
   @@index([status])
   @@index([createdAt])
   @@index([email])
+  @@index([isElitePremium])
 }
 
 enum LeadStatus {

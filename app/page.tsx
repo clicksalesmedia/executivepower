@@ -1373,7 +1373,7 @@ opportunities.
                 </p>
                 
                 <motion.a 
-                  href="/checkout/form?package=comprehensive&price=500" 
+                  href="/elite-premium" 
                   className="luxury-button text-black px-12 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10"
                   whileHover={{ scale: 1.05, y: -3 }}
                   whileTap={{ scale: 0.95 }}

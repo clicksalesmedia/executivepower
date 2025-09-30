@@ -27,6 +27,7 @@ interface Lead {
   createdAt: string;
   updatedAt: string;
   notes?: string | null;
+  isElitePremium?: boolean;
 }
 
 export default function AdminPortal() {
@@ -35,7 +36,7 @@ export default function AdminPortal() {
   const [leads, setLeads] = useState<Lead[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
-  const [filter, setFilter] = useState<'all' | 'PENDING' | 'PAID' | 'CANCELLED' | 'REFUNDED'>('all');
+  const [filter, setFilter] = useState<'all' | 'PENDING' | 'PAID' | 'CANCELLED' | 'REFUNDED' | 'elite-premium'>('all');
   const [searchTerm, setSearchTerm] = useState('');
 
   // Redirect to sign-in if not authenticated
@@ -89,7 +90,8 @@ export default function AdminPortal() {
 
   // Filter leads
   const filteredLeads = leads.filter(lead => {
-    const matchesFilter = filter === 'all' || lead.status === filter;
+    const matchesFilter = filter === 'all' || 
+                         (filter === 'elite-premium' ? lead.isElitePremium : lead.status === filter);
     const matchesSearch = searchTerm === '' || 
       lead.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       lead.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -116,6 +118,7 @@ export default function AdminPortal() {
     paid: leads.filter(l => l.status === 'PAID').length,
     cancelled: leads.filter(l => l.status === 'CANCELLED').length,
     refunded: leads.filter(l => l.status === 'REFUNDED').length,
+    elitePremium: leads.filter(l => l.isElitePremium).length,
     totalRevenue: leads.filter(l => l.status === 'PAID').reduce((sum, l) => sum + l.price, 0)
   };
 
@@ -226,7 +229,7 @@ export default function AdminPortal() {
           </div>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 mb-6">
             <div className="glass-effect p-4 rounded-xl text-center">
               <div className="text-2xl font-bold text-white">{stats.total}</div>
               <div className="text-sm text-gray-400">Total Leads</div>
@@ -248,6 +251,10 @@ export default function AdminPortal() {
               <div className="text-sm text-gray-400">Refunded</div>
             </div>
             <div className="glass-effect p-4 rounded-xl text-center">
+              <div className="text-2xl font-bold text-purple-400">{stats.elitePremium}</div>
+              <div className="text-sm text-gray-400">Elite Premium</div>
+            </div>
+            <div className="glass-effect p-4 rounded-xl text-center">
               <div className="text-2xl font-bold text-yellow-200">€{stats.totalRevenue}</div>
               <div className="text-sm text-gray-400">Revenue</div>
             </div>
@@ -255,8 +262,8 @@ export default function AdminPortal() {
 
           {/* Filters and Search */}
           <div className="flex flex-col md:flex-row gap-4 mb-6">
-            <div className="flex space-x-2">
-              {(['all', 'PENDING', 'PAID', 'CANCELLED', 'REFUNDED'] as const).map((status) => (
+            <div className="flex flex-wrap gap-2">
+              {(['all', 'PENDING', 'PAID', 'CANCELLED', 'REFUNDED', 'elite-premium'] as const).map((status) => (
                 <button
                   key={status}
                   onClick={() => setFilter(status)}
@@ -266,7 +273,9 @@ export default function AdminPortal() {
                       : 'glass-effect text-gray-400 hover:text-white'
                   }`}
                 >
-                  {status === 'all' ? 'All' : status.charAt(0) + status.slice(1).toLowerCase()}
+                  {status === 'all' ? 'All' : 
+                   status === 'elite-premium' ? 'Elite Premium' :
+                   status.charAt(0) + status.slice(1).toLowerCase()}
                 </button>
               ))}
             </div>
@@ -323,6 +332,14 @@ export default function AdminPortal() {
                     <div className="flex items-center justify-between text-xs text-gray-500">
                       <div className="flex items-center space-x-2">
                         <span>{lead.packageName}</span>
+                        {lead.isElitePremium && (
+                          <span className="inline-flex items-center px-2 py-1 rounded-full text-xs bg-purple-600/20 text-purple-400 border border-purple-600/30">
+                            <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3l14 9-14 9V3z" />
+                            </svg>
+                            Elite Premium
+                          </span>
+                        )}
                         {lead.cvUrl && (
                           <span className="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-600/20 text-green-400 border border-green-600/30">
                             <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

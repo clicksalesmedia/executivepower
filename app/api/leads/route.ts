@@ -42,7 +42,8 @@ export async function POST(request: NextRequest) {
       packageId,
       packageName,
       price,
-      currency
+      currency,
+      isElitePremium
     } = body;
 
     // Validate required fields
@@ -64,7 +65,8 @@ export async function POST(request: NextRequest) {
         packageName,
         price,
         currency: currency || 'EUR',
-        status: LeadStatus.PENDING
+        status: LeadStatus.PENDING,
+        isElitePremium: isElitePremium || false
       }
     });
 
