@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -104,10 +105,12 @@ export default function SignIn() {
           {/* Header */}
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-6">
-              <img 
+              <Image 
                 src="/executivepower.avif" 
                 alt="Executive Power Logo" 
                 className="h-12 w-auto"
+                width={48}
+                height={48}
               />
             </div>
             <h1 className="text-3xl font-bold mb-2">

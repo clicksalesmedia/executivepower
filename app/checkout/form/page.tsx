@@ -2,6 +2,7 @@
 import { useState, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter, useSearchParams } from 'next/navigation';
+import Image from 'next/image';
 
 // Package data
 const packageData = {
@@ -302,10 +303,12 @@ function CheckoutFormContent() {
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-center justify-center mb-6">
-            <img 
+            <Image 
               src="/executivepower.avif" 
               alt="Executive Power Logo" 
               className="h-12 w-auto"
+              width={48}
+              height={48}
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">

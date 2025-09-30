@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   // State for testimonial carousel
@@ -79,10 +79,6 @@ export default function Home() {
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Isabellita - Elite Executive Consultation | Executive Power</title>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
       <style
         dangerouslySetInnerHTML={{
           __html: `
@@ -295,10 +291,12 @@ export default function Home() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <img 
+              <Image 
                 src="/executivepower.avif" 
                 alt="Executive Power Logo" 
                 className="h-12 w-auto"
+                width={48}
+                height={48}
               />
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -530,11 +528,13 @@ export default function Home() {
                       ease: "easeInOut" 
                     }}
                   />
-                  <img
+                  <Image
                     src="/isaforbesmobile.png"
                     alt="Isabellita - CEO of Executive Power"
                     className="w-full h-auto scale-[1.5] mx-auto relative z-10 max-w-sm"
                     style={{ transformOrigin: 'bottom center' }}
+                    width={400}
+                    height={600}
                   />
                 </div>
               </motion.div>
@@ -671,11 +671,13 @@ export default function Home() {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
                 >
-                  <img
+                  <Image
                     src="/isaforbess.png"
                     alt="Isabellita - CEO of Executive Power"
                     className="w-full h-auto scale-[1.2] sm:scale-[1.5] lg:scale-[2] mx-auto relative z-10 max-w-xs sm:max-w-sm lg:max-w-none"
                     style={{ transformOrigin: 'bottom center' }}
+                    width={500}
+                    height={750}
                   />
                 </motion.div>
                 
@@ -953,7 +955,7 @@ opportunities.
             </div>
           </div>
           <p className="text-xl mt-4 text-center text-gray-400">
-          All testimonials are publicly available on Isabelita Castilho's LinkedIn profile.
+          All testimonials are publicly available on Isabelita Castilho&apos;s LinkedIn profile.
             </p>
         </div>
       </section>
@@ -1392,10 +1394,12 @@ opportunities.
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <img 
+                <Image 
                   src="/executivepower.avif" 
                   alt="Executive Power Logo" 
                   className="h-10 w-auto"
+                  width={40}
+                  height={40}
                 />
               </div>
               <p className="text-gray-400 text-sm">
