@@ -301,7 +301,7 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a
-                href="#pricing"
+                href="#program"
                 className="text-gray-300 hover:text-yellow-200 transition"
               >
                 Elite Premium
