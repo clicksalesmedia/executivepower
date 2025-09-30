@@ -480,7 +480,7 @@ export default function Home() {
                   animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
                   transition={{ duration: 2.5, repeat: Infinity }}
                 />
-                <span className="text-sm font-medium text-yellow-200 tracking-wide">
+                <span className="text-xl font-medium text-yellow-200 tracking-wide">
                   Exclusive Access • Limited Executive Seats Available
                 </span>
               </motion.div>
@@ -719,7 +719,7 @@ export default function Home() {
                 animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
                 transition={{ duration: 2.5, repeat: Infinity }}
               />
-              <span className="text-sm font-medium text-yellow-200 tracking-wide">
+              <span className="text-xl font-medium text-yellow-200 tracking-wide">
                 MEET YOUR EXECUTIVE TRANSFORMATION EXPERT
               </span>
             </div>
@@ -975,7 +975,7 @@ opportunities.
                 animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
                 transition={{ duration: 2.5, repeat: Infinity }}
               />
-              <span className="text-sm font-medium text-yellow-200 tracking-wide">
+              <span className="text-xl font-medium text-yellow-200 tracking-wide">
                 EXECUTIVE CAREER TRANSFORMATION PLANS
               </span>
             </div>
@@ -1198,8 +1198,8 @@ opportunities.
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 glass-effect px-4 py-2 rounded-full mb-6">
-              <span className="text-sm text-yellow-200 tracking-widest">
-                The Executive Power Job Landing System™ Signature Program
+              <span className="text-xl text-yellow-200 tracking-widest">
+                The Executive Power Job Landing Program™ Signature Program
               </span>
             </div>
             <h2 className="font-luxury text-4xl md:text-5xl font-bold mb-6">
