@@ -952,6 +952,9 @@ opportunities.
               ))}
             </div>
           </div>
+          <p className="text-xl mt-4 text-center text-gray-400">
+          All testimonials are publicly available on Isabelita Castilho's LinkedIn profile.
+            </p>
         </div>
       </section>
 
