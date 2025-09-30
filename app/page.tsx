@@ -10,58 +10,58 @@ export default function Home() {
   // Testimonials data
   const testimonials = [
     {
-      name: "C.M.",
-      role: "Landed a new VP Job (Kenyan who moved from Dubai to Dublin)",
+      name: "",
+      role: "",
       quote: "I had the pleasure of working with Isabelita and what a life changer her guidance was! The ease with which she combines her expertise with genuine care is amazing. She provided clear strategies, practical advice and also helped me approach my career with confidence and determination."
     },
     {
-      name: "L.Q.",
-      role: "Landed a CEO Dream Job (Brazilian who moved from France to Argentina)",
+      name: "",
+      role: "",
       quote: "For the past 3 months, Isabelita has been my rock, guiding me through what turned out to be a game-changing professional transition. From our very first session to finding my exciting new role, she was there every step of the way. She didn't just help me find a job - she helped me discover what I really wanted in my career journey."
     },
     {
-      name: "H.R.",
-      role: "Started his Own Startup Business in Dubai (Brazilian in Dubai)",
+      name: "",
+      role: "",
       quote: "I was lucky enough to be mentored by Isabelita. An incredible person with an enviable knowledge of how a senior executive can achieve success in their next professional move. In addition to the technical skills she uses to guide her mentees, her relationship network is impressive and makes all the difference."
     },
     {
-      name: "O.K.",
-      role: "Landed a Managing Director Dream Job (Dutch in The Netherlands)",
+      name: "",
+      role: "",
       quote: "Isabelita supported me in the last couple of months since January on a bi-weekly basis to find my next assignment. Her way of working is professional and structured with a personal flavour which makes the interaction efficient and fun. I strongly recommend Isabelita if you need an experienced sparring partner."
     },
     {
-      name: "S.M.",
-      role: "Landed a Global Director Role in Germany (Iranian in Germany)",
+      name: "",
+      role: "",
       quote: "I had the pleasure of working with Isabelita, a dedicated and success-oriented professional. As a career strategist, she brings a wealth of expertise to executives navigating career transitions. Her extensive professional network and remarkable ability to connect people make her an invaluable asset."
     },
     {
-      name: "P.C.",
-      role: "Started his Own Startup Business in The United States (Argentinian/American in The US)",
+      name: "",
+      role: "",
       quote: "I have learned so much from Isabelita! She guided me on how to redefine myself, presenting my skills and achievements in new and better ways. She taught me the immense value of Visibility and Networking. Most importantly, Isabelita empowered me to drive myself forward, realizing that the sky is my only limit."
     },
     {
-      name: "B.P.",
-      role: "Landed a CEO Dream Job in Dubai (Indian in Dubai)",
+      name: "",
+      role: "",
       quote: "I had the privilege of working with Isabelita as my executive coach over the past year. She provided objective insights and consistently challenged my status quo with thought-provoking questions that resonated deeply with my experiences. Isabelita was instrumental in guiding me to develop effective networking strategies."
     },
     {
-      name: "M.D.R.",
-      role: "Landed a SVP Supply Job (Italian who moved from Italy to the US/New York)",
+      name: "",
+      role: "",
       quote: "I had the pleasure to work with Isabelita while I was transitioning careers in order to land an executive job in New York. She is a force of nature: always available, upbeat, reliable and on point. She is a font of knowledge on job hunting strategies, LinkedIn profile optimization, and effective communication during interviews."
     },
     {
-      name: "A.M.H.",
-      role: "Landed a Director Job in the Government Sector (Saudi Arabian living in Bahrain who moved back to Saudi Arabia)",
+      name: "",
+      role: "",
       quote: "Isabelita is a transparent and thoughtful to others. I came to her when I was in a devastated mood. With her knowledge and experience she managed to flip that mood and helped me in negotiating my latest job successfully. I recommend her for anyone who is having difficulty in landing the proper job."
     },
     {
-      name: "R.A.K.",
-      role: "Landed a CMO role in a Non Profit Organization in Dubai (American in Dubai)",
+      name: "",
+      role: "",
       quote: "Isabelita is a powerhouse career advisor. She is sharp, knowledgeable, resourceful, and experienced in offering solutions and an effective action plan that yields results. Her expertise in using tools like LinkedIn and other online portals as well as navigating challenging situations like networking and negotiations was instrumental."
     },
     {
-      name: "M.A.",
-      role: "Started his Own Startup Business in Kuwait",
+      name: "",
+      role: "",
       quote: "I was extremely fortunate to have had Isabelita as my executive career Advisor and Coach. Not only did she Mentor me but she was able to bring out the best in me. Within a short period of time I was able to see my plans, which Isabelita had set for me, reach true fruition. Her ability to guide people effectively is a testament to her cultural knowledge."
     }
   ];
@@ -546,7 +546,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.9 }}
               >
                 Navigate the Unpublished Executive <span className="text-yellow-200 font-semibold">Job Market</span> with Isabelita Castilho,
-                distinguished Executive <span className="text-yellow-200 font-semibold">Career Transition</span> Mentor and a <span className="text-yellow-200 font-semibold">Forbes Member</span>
+                distinguished Executive <span className="text-yellow-200 font-semibold">Career Transition</span> Mentor and a <span className="text-yellow-200 font-semibold">Forbes Member </span>
                 Council, Award Winner of Best Career Coach of 2025.
               </motion.p>
 
@@ -695,9 +695,6 @@ export default function Home() {
                   }}
                   whileHover={{ scale: 1.05, y: 5 }}
                 >
-                  <span className="text-sm font-semibold text-yellow-200">
-                    10+ Years Experience
-                  </span>
                 </motion.div>
               </div>
             </motion.div>
@@ -1013,7 +1010,7 @@ opportunities.
                     <div className="font-luxury text-3xl md:text-4xl font-bold gold-gradient mb-2">
                       €500/ Month - One Time
                     </div>
-                    <div className="text-sm gold-gradient font-medium">NON-REFUNDABLE</div>
+                    
                     <div className="text-lg text-gray-400 mt-2">Complete Package</div>
                   </div>
                 </div>
@@ -1087,6 +1084,7 @@ opportunities.
                     </div>
                   </div>
                 </div>
+                <div className="text-xs gold-gradient text-center font-small">Non-Refundable</div>
               </div>
 
               <motion.a
@@ -1120,8 +1118,7 @@ opportunities.
                     <div className="font-luxury text-3xl md:text-4xl font-bold gold-gradient mb-2">
                       €150/ Month - One Time
                     </div>
-                    <div className="text-sm gold-gradient font-medium">NON-REFUNDABLE</div>
-                    <div className="text-lg text-gray-400 mt-2">Single Payment</div>
+                    <div className="text-lg text-gray-400 mt-2">Light Package</div>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-6">
@@ -1176,6 +1173,7 @@ opportunities.
                     </div>
                   </div>
                 </div>
+                <div className="text-xs gold-gradient text-center font-small">Non-Refundable</div>
               </div>
 
               <motion.a
@@ -1368,12 +1366,7 @@ opportunities.
                 <p className="text-gray-300 mb-6">
                   Our comprehensive executive career acceleration program takes you from initial branding through successful job placement and onboarding. With our proven methodology, you&apos;ll access both published and hidden job markets while building an executive brand that commands attention.
                 </p>
-                <div className="text-left mb-6 max-w-2xl mx-auto">
-                  <h4 className="font-semibold text-white mb-2">Foundation &amp; Assessment</h4>
-                  <p className="text-gray-300 text-sm">
-                    Establish your executive presence and create a powerful personal brand architecture that resonates with decision-makers.
-                  </p>
-                </div>
+                
                 <motion.a 
                   href="/checkout/form?package=comprehensive&price=500" 
                   className="luxury-button text-black px-12 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10"
@@ -1403,7 +1396,7 @@ opportunities.
                 />
               </div>
               <p className="text-gray-400 text-sm">
-                Transforming leaders into legends since 2015.
+              Unlocking Your Executive Power! Your Transition, My Expertise.
               </p>
             </div>
             <div>
@@ -1425,6 +1418,7 @@ opportunities.
                 <li>
                   <a
                     href="https://www.executivespower.com"
+                    target="_blank"
                     className="hover:text-yellow-200 transition"
                   >
                     Main Website
@@ -1446,7 +1440,7 @@ opportunities.
           </div>
           <div className="border-t border-yellow-600/10 pt-8 text-center text-sm text-gray-500">
             <p>
-              © 2025 Executive Power Company. All rights reserved. | Unlocking Your Executive Power! Your Transition, My Expertise.
+              © 2025 Executive Power Company. All rights reserved.
             </p>
           </div>
         </div>
