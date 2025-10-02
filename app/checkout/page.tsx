@@ -193,6 +193,8 @@ export default function CheckoutPage() {
                 >
                   Select {pkg.currency} {pkg.price} Package
                 </motion.button>
+                
+                <div className="text-xs gold-gradient text-center font-small mt-2">Non-Refundable</div>
               </motion.div>
             ))}
           </div>

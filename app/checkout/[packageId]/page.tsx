@@ -120,6 +120,8 @@ function CheckoutForm({ packageInfo }: { packageInfo: PackageInfo }) {
           `Complete Payment - ${packageInfo.currency} ${packageInfo.price}`
         )}
       </motion.button>
+      
+      <div className="text-xs gold-gradient text-center font-small">Non-Refundable</div>
     </motion.form>
   );
 }

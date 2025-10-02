@@ -743,7 +743,7 @@ opportunities.
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-luxury text-3xl font-bold text-yellow-200 mb-4">Career Transition Advisor</h3>
+            <h3 className="font-luxury text-3xl font-bold text-yellow-200 mb-4">Executive Career Transition Advisor</h3>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 xl:grid-cols-6 gap-8 max-w-7xl mx-auto">
