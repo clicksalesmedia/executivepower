@@ -995,10 +995,8 @@ opportunities.
                 <div className="mb-6">
                   <div className="text-center">
                     <div className="font-luxury text-3xl md:text-4xl font-bold gold-gradient mb-2">
-                      €500/ Month - One Time
+                      $495 - Complete Package
                     </div>
-                    
-                    <div className="text-lg text-gray-400 mt-2">Complete Package</div>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-6">
@@ -1075,7 +1073,7 @@ opportunities.
               </div>
 
               <motion.a
-                href="/checkout/form?package=comprehensive&price=500"
+                href="/checkout/form?package=comprehensive&price=495"
                 className="luxury-button text-black w-full py-4 rounded-full font-bold text-lg inline-block text-center relative z-10 shadow-2xl"
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
@@ -1103,9 +1101,8 @@ opportunities.
                 <div className="mb-6">
                   <div className="text-center">
                     <div className="font-luxury text-3xl md:text-4xl font-bold gold-gradient mb-2">
-                      €150/ Month - One Time
+                      $149 - Light Package
                     </div>
-                    <div className="text-lg text-gray-400 mt-2">Light Package</div>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-6">
@@ -1164,7 +1161,7 @@ opportunities.
               </div>
 
               <motion.a
-                href="/checkout/form?package=basic&price=150"
+                href="/checkout/form?package=basic&price=149"
                 className="luxury-button text-black w-full py-4 rounded-full font-bold text-lg inline-block text-center relative z-10"
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}

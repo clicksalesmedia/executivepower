@@ -118,7 +118,7 @@ function ElitePremiumFormContent() {
         packageId: 'elite-premium',
         packageName: 'Elite Premium Program',
         price: 0, // No price for Elite Premium application
-        currency: 'EUR',
+        currency: 'USD',
         isElitePremium: true // Flag to identify Elite Premium leads
       };
 
@@ -408,7 +408,7 @@ function ElitePremiumFormContent() {
                     }}
                     rows={3}
                     className={`w-full px-4 py-3 rounded-lg form-input text-white placeholder-gray-400 ${errors.jobTitles ? 'border-red-500' : ''}`}
-                    placeholder="e.g., Current: Senior Operations Manager, Previous: Operations Coordinator"
+                    placeholder="e.g.: Current: SVP, Previous: Head of Ops"
                   />
                   {errors.jobTitles && <p className="text-red-400 text-sm mt-1">{errors.jobTitles}</p>}
                 </div>

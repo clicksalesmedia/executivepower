@@ -17,8 +17,8 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 const packageData = {
   basic: {
     name: 'Strategic Job Search Intelligence',
-    price: 150,
-    currency: 'EUR',
+    price: 149,
+    currency: 'USD',
     features: [
       '60-minute strategy session with Isabellita',
       'Comprehensive written report (10-15 business days)',
@@ -30,8 +30,8 @@ const packageData = {
   },
   comprehensive: {
     name: 'Customized Comprehensive Executive Career Roadmap',
-    price: 500,
-    currency: 'EUR',
+    price: 495,
+    currency: 'USD',
     features: [
       '60-minute strategy session with Isabellita',
       'Comprehensive written report (10-15 business days)',

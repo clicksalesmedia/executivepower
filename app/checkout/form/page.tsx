@@ -8,13 +8,13 @@ import Image from 'next/image';
 const packageData = {
   basic: {
     name: 'Strategic Job Search Intelligence',
-    price: 150,
-    currency: 'EUR',
+    price: 149,
+    currency: 'USD',
   },
   comprehensive: {
     name: 'Customized Comprehensive Executive Career Roadmap',
-    price: 500,
-    currency: 'EUR',
+    price: 495,
+    currency: 'USD',
   }
 };
 

@@ -81,7 +81,7 @@ model Lead {
   packageId            String
   packageName          String
   price                Float
-  currency             String   @default("EUR")
+  currency             String   @default("USD")
   status               LeadStatus @default(PENDING)
   paymentIntentId      String?
   notes                String?

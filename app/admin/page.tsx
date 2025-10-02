@@ -255,7 +255,7 @@ export default function AdminPortal() {
               <div className="text-sm text-gray-400">Elite Premium</div>
             </div>
             <div className="glass-effect p-4 rounded-xl text-center">
-              <div className="text-2xl font-bold text-yellow-200">€{stats.totalRevenue}</div>
+              <div className="text-2xl font-bold text-yellow-200">${stats.totalRevenue}</div>
               <div className="text-sm text-gray-400">Revenue</div>
             </div>
           </div>
@@ -326,7 +326,7 @@ export default function AdminPortal() {
                         <div className={`px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(lead.status)}`}>
                           {lead.status.toUpperCase()}
                         </div>
-                        <p className="text-sm text-yellow-200 mt-1">€{lead.price}</p>
+                        <p className="text-sm text-yellow-200 mt-1">${lead.price}</p>
                       </div>
                     </div>
                     <div className="flex items-center justify-between text-xs text-gray-500">

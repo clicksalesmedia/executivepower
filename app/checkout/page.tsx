@@ -10,8 +10,8 @@ export default function CheckoutPage() {
     {
       id: 'basic',
       name: 'Strategic Job Search Intelligence',
-      price: 150,
-      currency: 'EUR',
+      price: 149,
+      currency: 'USD',
       description: 'Strategic Job Search Intelligence for Senior Leaders with Job Landing Recommendations Actions',
       features: [
         'One 60-minute strategy session',
@@ -30,8 +30,8 @@ export default function CheckoutPage() {
     {
       id: 'comprehensive',
       name: 'Customized Comprehensive Executive Career Roadmap',
-      price: 500,
-      currency: 'EUR',
+      price: 495,
+      currency: 'USD',
       description: 'Strategic Job Search Intelligence for Senior Leaders with Job Landing Plan',
       features: [
         'One 60-minute strategy session',

@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
         packageId,
         packageName,
         price,
-        currency: currency || 'EUR',
+        currency: currency || 'USD',
         status: LeadStatus.PENDING,
         isElitePremium: isElitePremium || false
       }
