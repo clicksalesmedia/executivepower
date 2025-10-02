@@ -275,7 +275,7 @@ function ElitePremiumFormContent() {
             <span className="gold-gradient">Elite Premium Application</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Apply for exclusive access to our Elite Premium Executive Career Transformation Program
+            Apply for exclusive access to our Elite Premium <br /> Executive Career Transformation Program
           </p>
         </motion.div>
 
