@@ -680,24 +680,6 @@ export default function Home() {
                     height={750}
                   />
                 </motion.div>
-                
-                {/* Animated Floating Badges */}
-                <motion.div
-                  className="absolute -left-4 top-32 glass-effect px-4 py-2 rounded-full"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ 
-                    opacity: 1, 
-                    x: 0,
-                    y: [0, 8, 0]
-                  }}
-                  transition={{ 
-                    opacity: { duration: 0.6, delay: 1.7 },
-                    x: { duration: 0.6, delay: 1.7 },
-                    y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }
-                  }}
-                  whileHover={{ scale: 1.05, y: 5 }}
-                >
-                </motion.div>
               </div>
             </motion.div>
           </div>
