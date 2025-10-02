@@ -287,7 +287,7 @@ export default function Home() {
         }}
       />
       {/* Luxury Navigation */}
-      <nav className="fixed w-full top-0 z-50 glass-effect">
+      <nav className="fixed w-full top-0 z-50 glass-effect border-none">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
@@ -1180,7 +1180,7 @@ opportunities.
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 glass-effect px-4 py-2 rounded-full mb-6">
               <span className="text-xl text-yellow-200 tracking-widest">
-                The Executive Power Job Landing Program™ Signature Program
+                The 3-Months Executive Power Job Landing System™ Signature Program
               </span>
             </div>
             <h2 className="font-luxury text-4xl md:text-5xl font-bold mb-6">
@@ -1212,7 +1212,7 @@ opportunities.
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-200 mr-3">✓</span>
-                  <span>Executive bio development for maximum impact</span>
+                  <span>Executive BIO development for maximum impact</span>
                 </li>
               </ul>
             </div>
@@ -1332,7 +1332,7 @@ opportunities.
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
                   <span className="text-yellow-200 mr-3">✓</span>
-                  <span>Foundation Building - Road Map for rapid career ladder progression</span>
+                  <span>Foundation Building - Road Map for rapid career ladder progression in your New Job</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-200 mr-3">✓</span>
@@ -1382,7 +1382,7 @@ opportunities.
                 />
               </div>
               <p className="text-gray-400 text-sm">
-              Unlocking Your Executive Power! Your Transition, My Expertise.
+              Unlocking Your Executive Power! Your Transition, Our Expertise.
               </p>
             </div>
             <div>
@@ -1426,7 +1426,7 @@ opportunities.
           </div>
           <div className="border-t border-yellow-600/10 pt-8 text-center text-sm text-gray-500">
             <p>
-              © 2025 Executive Power Company. All rights reserved.
+              © 2025 Executive Power FZE. All rights reserved.
             </p>
           </div>
         </div>
