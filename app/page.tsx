@@ -739,7 +739,7 @@ opportunities.
               viewport={{ once: true }}
             >
               <p className="text-gray-300 leading-relaxed text-lg">
-                Isabelita Castilho is a distinguished executive career transition advisor with over a decade of expertise in guiding senior leaders through successful career transitions. She helps professionals navigate today&apos;s competitive job market with unshakeable confidence and strategic precision.
+                Isabelita Castilho is a distinguished Executive Career Transition Advisor with over a decade of expertise in guiding senior leaders through successful career transitions. She helps professionals navigate today&apos;s competitive job market with unshakeable confidence and strategic precision.
               </p>
             </motion.div>
 
