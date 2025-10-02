@@ -304,11 +304,12 @@ function CheckoutFormContent() {
         >
           <div className="flex items-center justify-center mb-6">
             <Image 
-              src="/executivepower.avif" 
+              src="/logoexec.png" 
               alt="Executive Power Logo" 
-              className="h-12 w-auto"
-              width={48}
-              height={48}
+              className="h-16 w-auto"
+              width={120}
+              height={120}
+              priority
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">

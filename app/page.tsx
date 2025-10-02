@@ -121,7 +121,7 @@ export default function Home() {
         .glass-effect {
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            /* border: 1px solid rgba(212, 175, 55, 0.2); */
         }
         
         .floating {
@@ -292,11 +292,12 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <Image 
-                src="/executivepower.avif" 
+                src="/logoexec.png" 
                 alt="Executive Power Logo" 
-                className="h-12 w-auto"
-                width={48}
-                height={48}
+                className="h-16 w-auto"
+                width={120}
+                height={120}
+                priority
               />
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -1374,11 +1375,11 @@ opportunities.
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Image 
-                  src="/executivepower.avif" 
+                  src="/logoexec.png" 
                   alt="Executive Power Logo" 
-                  className="h-10 w-auto"
-                  width={40}
-                  height={40}
+                  className="h-12 w-auto"
+                  width={80}
+                  height={80}
                 />
               </div>
               <p className="text-gray-400 text-sm">

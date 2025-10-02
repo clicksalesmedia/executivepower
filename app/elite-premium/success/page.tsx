@@ -70,11 +70,12 @@ export default function ElitePremiumSuccess() {
             {/* Header */}
             <div className="flex items-center justify-center mb-8">
               <Image 
-                src="/executivepower.avif" 
+                src="/logoexec.png" 
                 alt="Executive Power Logo" 
-                className="h-16 w-auto"
-                width={64}
-                height={64}
+                className="h-20 w-auto"
+                width={150}
+                height={150}
+                priority
               />
             </div>
 
