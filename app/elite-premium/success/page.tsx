@@ -125,7 +125,7 @@ export default function ElitePremiumSuccess() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-1">Application Review</h3>
-                    <p className="text-gray-400 text-sm">Our team will carefully review your application and CV within 24-48 hours.</p>
+                    <p className="text-gray-400 text-sm">Our team will carefully review your application and CV within 7 days.</p>
                   </div>
                 </div>
                 
@@ -135,7 +135,7 @@ export default function ElitePremiumSuccess() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-1">Personal Consultation</h3>
-                    <p className="text-gray-400 text-sm">If selected, Isabelita will personally reach out to schedule a consultation call.</p>
+                    <p className="text-gray-400 text-sm">If selected, Isabelita will personally reach out to schedule a consultation call with you.</p>
                   </div>
                 </div>
                 
@@ -147,6 +147,28 @@ export default function ElitePremiumSuccess() {
                     <h3 className="text-white font-semibold mb-1">Program Details</h3>
                     <p className="text-gray-400 text-sm">We&apos;ll discuss the program details, timeline, and next steps during your consultation.</p>
                   </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div>
+                    <p className="text-yellow-100 text-sm text-center">If you don&apos;t hear back from us within 3 business days please reach out to Isabelita directly</p>
+                    <div className="text-yellow-100 text-sm text-center">
+                      <a 
+                        href="mailto:isabelita@executivespower.com" 
+                        className="text-yellow-200 hover:text-yellow-100 underline transition-colors"
+                      >
+                        isabelita@executivespower.com
+                      </a>
+                      <span className="mx-2">or via</span>
+                      <a 
+                        href="https://www.linkedin.com/in/isabelitacastilho/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-yellow-200 hover:text-yellow-100 underline transition-colors"
+                      >
+                        LinkedIn
+                      </a>
+                    </div>
+                </div> 
                 </div>
               </div>
             </motion.div>
