@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Isabelita - Elite Executive Career Transition Advisory",
+  title: "Elite Executive Career Transition Advisory | With Executive Power & Isabelita Castilho",
   description: "With Executive Power & Isabelita Castilho",
 };
 
