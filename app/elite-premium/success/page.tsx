@@ -1,8 +1,24 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useEffect } from 'react';
+
+// TypeScript declaration for gtag
+declare global {
+  interface Window {
+    gtag: (command: string, action: string, params: Record<string, unknown>) => void;
+  }
+}
 
 export default function ElitePremiumSuccess() {
+  useEffect(() => {
+    // Fire Google Ads conversion tracking for Elite Premium form submission
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17571321701',
+      });
+    }
+  }, []);
   return (
     <>
       <style
