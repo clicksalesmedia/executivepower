@@ -875,10 +875,10 @@ opportunities.
           
           {/* Testimonial Carousel with Navigation */}
           <div className="relative">
-            {/* Navigation Arrows */}
+            {/* Navigation Arrows - Hidden on mobile, visible on desktop */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 carousel-arrow rounded-full flex items-center justify-center"
+              className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 carousel-arrow rounded-full items-center justify-center"
               aria-label="Previous testimonial"
             >
               <svg className="w-6 h-6 text-yellow-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -888,7 +888,7 @@ opportunities.
 
             <button
               onClick={nextTestimonial}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 carousel-arrow rounded-full flex items-center justify-center"
+              className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 carousel-arrow rounded-full items-center justify-center"
               aria-label="Next testimonial"
             >
               <svg className="w-6 h-6 text-yellow-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -897,22 +897,22 @@ opportunities.
             </button>
 
             {/* Testimonial Cards Container */}
-            <div className="overflow-hidden mx-16">
+            <div className="overflow-hidden mx-0 md:mx-16">
               <motion.div 
                 className="flex transition-transform duration-500 ease-in-out"
                 animate={{ x: `${-currentIndex * 100}%` }}
               >
                 {testimonials.map((testimonial, index) => (
-                  <div key={index} className="w-full flex-shrink-0 px-4">
-                    <div className="glass-effect rounded-2xl p-8 hover-lift max-w-4xl mx-auto">
+                  <div key={index} className="w-full flex-shrink-0 px-2 md:px-4">
+                    <div className="glass-effect rounded-2xl p-4 md:p-8 hover-lift max-w-4xl mx-auto">
                       <div className="flex mb-4 justify-center">
-                        <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                        <span className="text-xl md:text-2xl">⭐⭐⭐⭐⭐</span>
                       </div>
-                      <p className="text-gray-300 mb-6 italic text-lg leading-relaxed text-center">
+                      <p className="text-gray-300 mb-6 italic text-base md:text-lg leading-relaxed text-center">
                         &quot;{testimonial.quote}&quot;
                       </p>
                       <div className="text-center">
-                        <div className="font-semibold text-white text-xl">{testimonial.name}</div>
+                        <div className="font-semibold text-white text-lg md:text-xl">{testimonial.name}</div>
                         <div className="text-sm text-yellow-200 mt-2">{testimonial.role}</div>
                       </div>
                     </div>
@@ -921,13 +921,35 @@ opportunities.
               </motion.div>
             </div>
 
+            {/* Mobile Navigation Arrows - Bottom positioned */}
+            <div className="flex md:hidden justify-center space-x-4 mt-6">
+              <button
+                onClick={prevTestimonial}
+                className="w-12 h-12 carousel-arrow rounded-full flex items-center justify-center"
+                aria-label="Previous testimonial"
+              >
+                <svg className="w-5 h-5 text-yellow-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={nextTestimonial}
+                className="w-12 h-12 carousel-arrow rounded-full flex items-center justify-center"
+                aria-label="Next testimonial"
+              >
+                <svg className="w-5 h-5 text-yellow-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
             {/* Dots Indicator */}
-            <div className="flex justify-center mt-8 space-x-2">
+            <div className="flex justify-center mt-6 md:mt-8 space-x-2">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                     index === currentIndex 
                       ? 'bg-yellow-200 scale-110' 
                       : 'bg-yellow-200/30 hover:bg-yellow-200/50'
@@ -937,7 +959,7 @@ opportunities.
               ))}
             </div>
           </div>
-          <p className="text-xl mt-4 text-center text-gray-400">
+          <p className="text-lg md:text-xl mt-4 text-center text-gray-400">
           All testimonials are publicly available on Isabelita Castilho&apos;s LinkedIn profile.
             </p>
         </div>
