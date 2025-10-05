@@ -34,13 +34,23 @@ function SuccessPageContent() {
               packageId: packageId
             });
 
-            // Fire Google Ads conversion tracking for $149 package (basic)
-            if (packageId === 'basic' && amount === 149) {
-              // Fire Google Ads conversion event
-              if (window.gtag) {
+            // Fire Google Ads conversion tracking based on package
+            if (window.gtag) {
+              // Fire conversion for $149 package (basic)
+              if (packageId === 'basic' && amount === 149) {
                 window.gtag('event', 'conversion', {
                   'send_to': 'AW-17571321701/KzVQCPHO4acbEOWu1LpB',
                   'value': 149.0,
+                  'currency': 'EUR',
+                  'transaction_id': paymentIntent
+                });
+              }
+              
+              // Fire conversion for $495 package (comprehensive)
+              if (packageId === 'comprehensive' && amount === 495) {
+                window.gtag('event', 'conversion', {
+                  'send_to': 'AW-17571321701/M8yOCMDx2qcbEOWu1LpB',
+                  'value': 495.0,
                   'currency': 'EUR',
                   'transaction_id': paymentIntent
                 });
