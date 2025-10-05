@@ -3,7 +3,7 @@ import Stripe from 'stripe';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     // Check if Stripe is properly configured at runtime
@@ -18,7 +18,9 @@ export async function GET(
       apiVersion: '2025-08-27.basil',
     });
 
-    const paymentIntentId = params.id;
+    // Await params in Next.js 15+
+    const { id } = await params;
+    const paymentIntentId = id;
 
     // Retrieve the PaymentIntent from Stripe
     const paymentIntent = await stripe.paymentIntents.retrieve(paymentIntentId);
