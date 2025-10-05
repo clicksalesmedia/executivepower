@@ -3,12 +3,58 @@ import { motion } from 'framer-motion';
 import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
+// TypeScript declaration for gtag
+declare global {
+  interface Window {
+    gtag: (command: string, action: string, params: Record<string, unknown>) => void;
+  }
+}
+
 function SuccessPageContent() {
   const [isLoading, setIsLoading] = useState(true);
+  const [packageInfo, setPackageInfo] = useState<{ name: string; amount: number; packageId: string } | null>(null);
   const searchParams = useSearchParams();
   const paymentIntent = searchParams.get('payment_intent');
 
   useEffect(() => {
+    // Fetch payment intent details to get package information
+    const fetchPaymentDetails = async () => {
+      if (paymentIntent) {
+        try {
+          const response = await fetch(`/api/payment-intent/${paymentIntent}`);
+          const data = await response.json();
+          
+          if (data.success) {
+            const amount = data.amount / 100; // Convert from cents to dollars
+            const packageId = data.metadata?.package_type || '';
+            
+            setPackageInfo({
+              name: data.metadata?.product || 'Executive Power Package',
+              amount: amount,
+              packageId: packageId
+            });
+
+            // Fire Google Ads conversion tracking for $149 package (basic)
+            if (packageId === 'basic' && amount === 149) {
+              // Fire Google Ads conversion event
+              if (window.gtag) {
+                window.gtag('event', 'conversion', {
+                  'send_to': 'AW-17571321701/KzVQCPHO4acbEOWu1LpB',
+                  'value': 149.0,
+                  'currency': 'EUR',
+                  'transaction_id': paymentIntent
+                });
+              }
+            }
+          }
+        } catch (error) {
+          console.error('Error fetching payment details:', error);
+        }
+      }
+    };
+
+    fetchPaymentDetails();
+
     // Simulate loading time for better UX
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -27,7 +73,7 @@ function SuccessPageContent() {
         document.head.removeChild(script);
       }
     };
-  }, []);
+  }, [paymentIntent]);
 
   if (isLoading) {
     return (
@@ -181,7 +227,7 @@ function SuccessPageContent() {
             </motion.div>
 
             {/* Payment Details */}
-            {paymentIntent && (
+            {paymentIntent && packageInfo && (
               <motion.div
                 className="glass-effect rounded-2xl p-6 mb-8 max-w-md mx-auto"
                 initial={{ opacity: 0, y: 30 }}
@@ -192,11 +238,11 @@ function SuccessPageContent() {
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="text-gray-400">Package:</span>
-                    <span className="text-white">Executive Power Consultation</span>
+                    <span className="text-white">{packageInfo.name}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-400">Amount:</span>
-                    <span className="text-gold-light font-semibold">$150.00</span>
+                    <span className="text-gold-light font-semibold">${packageInfo.amount.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-400">Payment ID:</span>
