@@ -18,7 +18,7 @@ const packageData = {
   basic: {
     name: 'Strategic Job Search Intelligence',
     price: 149,
-    currency: 'USD',
+    currency: 'EUR',
     features: [
       '60-minute strategy session with Isabellita',
       'Comprehensive written report (10-15 business days)',
@@ -31,7 +31,7 @@ const packageData = {
   comprehensive: {
     name: 'Customized Comprehensive Executive Career Roadmap',
     price: 495,
-    currency: 'USD',
+    currency: 'EUR',
     features: [
       '60-minute strategy session with Isabellita',
       'Comprehensive written report (10-15 business days)',
