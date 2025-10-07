@@ -850,7 +850,7 @@ opportunities.
           >
             <motion.a 
               href="/checkout" 
-              className="luxury-button text-black px-12 py-5 rounded-full font-bold text-xl transform hover:scale-105 transition inline-block text-center relative z-10"
+              className="luxury-button text-black px-12 py-5 rounded-full font-bold text-base md:text-xl transform hover:scale-105 transition inline-block text-center relative z-10"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
