@@ -9,12 +9,12 @@ const packageData = {
   basic: {
     name: 'Strategic Job Search Intelligence',
     price: 149,
-    currency: 'USD',
+    currency: 'EUR',
   },
   comprehensive: {
     name: 'Customized Comprehensive Executive Career Roadmap',
     price: 495,
-    currency: 'USD',
+    currency: 'EUR',
   }
 };
 
