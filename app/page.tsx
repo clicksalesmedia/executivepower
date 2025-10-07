@@ -1018,7 +1018,7 @@ opportunities.
                 <div className="mb-6">
                   <div className="text-center">
                     <div className="font-luxury text-3xl md:text-4xl font-bold gold-gradient mb-2">
-                      $495 - Complete Package
+                    €495 - Complete Package
                     </div>
                   </div>
                 </div>
@@ -1124,7 +1124,7 @@ opportunities.
                 <div className="mb-6">
                   <div className="text-center">
                     <div className="font-luxury text-3xl md:text-4xl font-bold gold-gradient mb-2">
-                      $149 - Light Package
+                    €149 - Light Package
                     </div>
                   </div>
                 </div>
